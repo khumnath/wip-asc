@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "dream": "सर्प देख्नु (Seeing a Snake)",
+    "meaning": "धन प्राप्ति हुने वा शत्रु परास्त हुने संकेत। (Sign identifying wealth gain or defeating enemies.)",
+    "type": "good"
+  },
+  {
+    "id": 2,
+    "dream": "आगो लाग्नु (Fire)",
+    "meaning": "चिन्ता र तनाव बढ्ने छ। (Increase in anxiety and stress.)",
+    "type": "bad"
+  },
+  {
+    "id": 3,
+    "dream": "उडेको देख्नु (Flying)",
+    "meaning": "सफलता र उन्नति हुनेछ। (Success and progress/promotion.)",
+    "type": "good"
+  },
+  {
+    "id": 4,
+    "dream": "दाँत झर्नु (Falling Teeth)",
+    "meaning": "कोही नजिकको व्यक्तिको स्वास्थ्यमा समस्या आउन सक्छ। (Health issues for a close one.)",
+    "type": "bad"
+  },
+  {
+    "id": 5,
+    "dream": "पानी पर्नु (Raining)",
+    "meaning": "शान्ति र समृद्धि प्राप्त हुनेछ। (Peace and prosperity.)",
+    "type": "good"
+  }
+]
