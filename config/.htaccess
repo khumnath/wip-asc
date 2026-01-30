@@ -1,0 +1,2 @@
+# Prevent directory listing, but allow file access
+Options -Indexes

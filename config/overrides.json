@@ -1,7 +1,18 @@
 {
+  "contactFormEndpoint": "./contact.php",
+  "contactMode": "demo",
+  "_contactMode_note": "options: 'server' (post to endpoint), 'client' (mailto), 'demo' (mock success)",
+  "adminEmail": "admin@example.com",
+  "newsMode": "client",
+	"_note": "if newsMode is 'server', then newsApiEndpoints will be used",
+  "newsApiEndpoints": [
+    "/news_api.php?category="
+  ],
   "corsProxies": [
-    "https://surya-news-proxy.aksharlabs2-4c9.workers.dev/?url=",
-    "/proxy.php?url="
+		"https://surya-news-proxy.aksharlabs2-4c9.workers.dev/?url=",
+    "/proxy.php?url=",
+		"_note: always first proxy is used, put /proxy.php?url= first if you want to use server proxy mode"
+
   ],
   "apiUrls": {
     "fuelPrices": { "url": "https://noc.org.np/retailprice", "type": "html" },
@@ -11,62 +22,68 @@
   },
   "newsFeeds": {
     "fresh": [
-      { "url": "https://www.onlinekhabar.com/feed", "type": "rss" },
-      { "url": "https://www.setopati.com/feed", "type": "rss" },
-      { "url": "https://ratopati.com/feed", "type": "rss" },
-      { "url": "https://annapurnapost.com/rss", "type": "rss" },
-      { "url": "https://nagariknews.nagariknetwork.com/feed", "type": "rss" },
-      { "url": "https://www.himalkhabar.com/feed", "type": "rss" },
-      { "url": "https://khabarhub.com/feed", "type": "rss" },
-      { "url": "https://nepalnews.com/feed", "type": "rss" },
-      { "url": "https://kalopati.com/feed", "type": "rss" }
+      { "url": "https://www.onlinekhabar.com/feed", "type": "rss", "sourceName": "OnlineKhabar" },
+      { "url": "https://www.setopati.com/", "type": "html", "sourceName": "Setopati" },
+      { "url": "https://ratopati.com", "type": "html", "sourceName": "Ratopati" },
+      { "url": "https://annapurnapost.com", "type": "html", "sourceName": "Annapurna Post" },
+      { "url": "https://nagariknews.nagariknetwork.com/feed", "type": "rss", "sourceName": "Nagarik News" },
+      { "url": "https://www.himalkhabar.com/feed", "type": "rss", "sourceName": "Himalalkhabar" },
+      { "url": "https://nepalnews.com/feed", "type": "rss", "sourceName": "Nepal News" },
+      { "url": "https://kalopati.com/feed", "type": "rss", "sourceName": "Kalopati" }
     ],
     "rajniti": [
-      { "url": "https://www.onlinekhabar.com/content/political/feed", "type": "rss" },
-      { "url": "https://www.onlinekhabar.com/feed", "type": "rss" },
-      { "url": "https://www.setopati.com/feed", "type": "rss" },
-      { "url": "https://ratopati.com/feed", "type": "rss" },
-      { "url": "https://annapurnapost.com/rss", "type": "rss" }
+      { "url": "https://www.onlinekhabar.com/politics", "type": "html", "sourceName": "OnlineKhabar" },
+      { "url": "https://www.setopati.com/politics", "type": "html", "sourceName": "Setopati" },
+      { "url": "https://ratopati.com/category/politics", "type": "html", "sourceName": "Ratopati" },
+      { "url": "https://annapurnapost.com/news/politics", "type": "html", "sourceName": "Annapurna Post" }
     ],
     "artha": [
-      { "url": "https://www.onlinekhabar.com/content/business/feed", "type": "rss" },
-      { "url": "https://bizmandu.com/feed", "type": "rss" },
-      { "url": "https://arthasarokar.com/feed", "type": "rss" },
-      { "url": "https://clickmandu.com/feed", "type": "rss" },
-      { "url": "https://merolagani.com/feed", "type": "rss" }
+      { "url": "https://www.onlinekhabar.com/business", "type": "html", "sourceName": "OnlineKhabar" },
+      { "url": "https://www.setopati.com/market", "type": "html", "sourceName": "Setopati" },
+      { "url": "https://bizmandu.com/feed", "type": "rss", "sourceName": "Bizmandu" },
+      { "url": "https://merolagani.com/feed", "type": "rss", "sourceName": "Merolagani" }
     ],
     "sports": [
-      { "url": "https://www.onlinekhabar.com/content/sports/feed", "type": "rss" },
-      { "url": "https://hamrokhelkud.com/feed", "type": "rss" }
+      { "url": "https://www.onlinekhabar.com/sports", "type": "html", "sourceName": "OnlineKhabar" },
+      { "url": "https://www.setopati.com/sports", "type": "html", "sourceName": "Setopati" },
+      { "url": "https://www.ratopati.com/category/sports", "type": "html", "sourceName": "Ratopati" },
+      { "url": "https://annapurnapost.com/news/sports", "type": "html", "sourceName": "Annapurna Post" },
+	    { "url": "https://hamrokhelkud.com/feed", "type": "rss", "sourceName": "Hamrokhelkud" }
     ],
     "tech": [
-      { "url": "https://www.onlinekhabar.com/content/science-technology/feed", "type": "rss" },
-      { "url": "https://techpana.com/feed", "type": "rss" },
-      { "url": "https://ictframe.com/feed", "type": "rss" }
-    ],
-    "sahitya": [
-      { "url": "https://www.onlinekhabar.com/content/literature/feed", "type": "rss" },
-      { "url": "https://sahityapost.com/feed", "type": "rss" },
-			{ "url": "https://artistkhabar.com/content/category/%E0%A4%B8%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%AF/feed/", "type": "rss" }
+      { "url": "https://www.onlinekhabar.com/technology/feed", "type": "rss", "sourceName": "OnlineKhabar" },
+      { "url": "https://techpana.com/feed", "type": "rss", "sourceName": "Techpana" },
+      { "url": "https://ictframe.com/feed", "type": "rss", "sourceName": "ICT Frame" }
     ],
     "health": [
-      { "url": "https://www.onlinekhabar.com/content/health/feed", "type": "rss" },
-      { "url": "https://swasthyakhabar.com/feed", "type": "rss" }
+      { "url": "https://www.onlinekhabar.com/health", "type": "html", "sourceName": "OnlineKhabar" },
+      { "url": "https://swasthyakhabar.com/main-news", "type": "html", "sourceName": "Swasthyakhabar" }
     ],
     "entertainment": [
-      { "url": "https://www.onlinekhabar.com/content/entertainment/feed", "type": "rss" },
-			{ "url": "https://artistkhabar.com/feed", "type": "rss" }
+      { "url": "https://www.onlinekhabar.com/entertainment/feed", "type": "rss", "sourceName": "OnlineKhabar" },
+      { "url": "https://www.setopati.com/art", "type": "html", "sourceName": "Setopati" },
+      { "url": "https://artistkhabar.com/feed", "type": "rss", "sourceName": "Artist Khabar" }
+    ],
+    "english": [
+        { "url": "https://english.onlinekhabar.com/feed", "type": "rss", "sourceName": "OnlineKhabar" },
+        { "url": "https://nepalnews.com/feed", "type": "rss", "sourceName": "Nepal News" },
+        { "url": "https://english.ratopati.com/", "type": "html", "sourceName": "Ratopati" },
+        { "url": "https://kathmandupost.com/", "type": "html", "sourceName": "Kathmandu Post" },
+        { "url": "https://myrepublica.nagariknetwork.com/", "type": "html", "sourceName": "My Republica" }
     ],
     "international": [
-      { "url": "https://www.onlinekhabar.com/content/international/feed", "type": "rss" }
+      { "url": "https://www.onlinekhabar.com/content/news/international/feed", "type": "rss", "sourceName": "OnlineKhabar" },
+      { "url": "https://www.setopati.com/global", "type": "html", "sourceName": "Setopati" }
     ]
   },
+
+	"_note-for-dev": "below events and muhurta are not prased in real. these should be populated in events. if same event for same day is available already in existing internal data then events and muhurta should be ignored",
   "customEvents": {
     "lunarEvents": [],
     "gregorianEvents": [
       {
         "event": "Custom Demo Event",
-        "date": "12/31",
+        "date": "12/04",
         "detail": "This event is loaded from overrides.json",
         "category": "Override",
         "holiday": true
@@ -77,8 +94,8 @@
   },
   "customMuhurta": {
     "marriage": {
-      "2082": {
-        "1": [30]
+      "2083": {
+        "1": [1, 6, 11, 16, 21, 26, 30]
       }
     }
   }

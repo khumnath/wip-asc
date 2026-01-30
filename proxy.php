@@ -1,12 +1,12 @@
 <?php
-// proxy.php - A simple CORS proxy
+// proxy.php - A simple CORS proxy (CURL-free version)
 
 // 1. Allow Access from ANY origin
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 header("Access-Control-Allow-Headers: *");
 
-// 2. Handle Preflight (Browser checks permission first)
+// 2. Handle Preflight
 if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     http_response_code(200);
     exit;
@@ -21,42 +21,68 @@ if (!$url) {
     exit;
 }
 
-// Security: Basic filter to ensure it's a URL
 if (!filter_var($url, FILTER_VALIDATE_URL)) {
     http_response_code(400);
     echo "Error: Invalid URL";
     exit;
 }
 
-// 4. Initialize CURL to fetch the data
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+$startTime = microtime(true);
 
-// Fake a User Agent so sites don't block us
-curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36');
+// 4. Fetch using file_get_contents
+$urlOrigin = parse_url($url, PHP_URL_SCHEME) . "://" . parse_url($url, PHP_URL_HOST) . "/";
+$headers = [
+    "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+    "Accept-Language: en-US,en;q=0.9",
+    "Referer: " . $urlOrigin,
+    "Connection: close"
+];
 
-// Execute
-$response = curl_exec($ch);
-$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+$options = [
+    "http" => [
+        "method" => "GET",
+        "header" => implode("\r\n", $headers) . "\r\n",
+        "follow_location" => 1,
+        "timeout" => 30, // Increased to match client
+        "ignore_errors" => true
+    ]
+];
 
-// Check for errors
-if (curl_errno($ch)) {
+$context = stream_context_create($options);
+
+if (!ini_get('allow_url_fopen')) {
     http_response_code(500);
-    echo 'Curl Error: ' . curl_error($ch);
+    echo "Error: PHP 'allow_url_fopen' is disabled.";
     exit;
 }
 
-// 5. Send the content back to your App
-http_response_code($httpCode);
+$response = @file_get_contents($url, false, $context);
+$endTime = microtime(true);
+$duration = round($endTime - $startTime, 2);
 
-// Forward the content type (so your App knows if it's XML or JSON)
-$info = curl_getinfo($ch);
-if (isset($info['content_type'])) {
-    header('Content-Type: ' . $info['content_type']);
+if ($response === false) {
+    $error = error_get_last();
+    http_response_code(500);
+    echo "Proxy Error: Fetch failed for $url after {$duration}s. " . ($error['message'] ?? '');
+    exit;
+}
+
+// 5. Forward the status and content type
+if (isset($http_response_header)) {
+    foreach ($http_response_header as $header) {
+        if (strpos(strtolower($header), 'content-type:') === 0) {
+            header($header);
+        }
+        if (strpos(strtolower($header), 'http/') === 0) {
+            // Extract status code: HTTP/1.1 200 OK -> 200
+            $parts = explode(' ', $header);
+            if (isset($parts[1])) {
+                http_response_code((int)$parts[1]);
+            }
+        }
+    }
 }
 
 echo $response;
-curl_close($ch);
 ?>
