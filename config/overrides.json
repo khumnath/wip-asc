@@ -1,18 +1,17 @@
 {
   "contactFormEndpoint": "./contact.php",
-  "contactMode": "demo",
+  "contactMode": "client",
   "_contactMode_note": "options: 'server' (post to endpoint), 'client' (mailto), 'demo' (mock success)",
-  "adminEmail": "admin@example.com",
+  "adminEmail": "[EMAIL_ADDRESS]",
   "newsMode": "client",
 	"_note": "if newsMode is 'server', then newsApiEndpoints will be used",
   "newsApiEndpoints": [
-    "/news_api.php?category="
+    "./news_api.php?category="
   ],
   "corsProxies": [
-		"https://surya-news-proxy.aksharlabs2-4c9.workers.dev/?url=",
-    "/proxy.php?url=",
-		"_note: always first proxy is used, put /proxy.php?url= first if you want to use server proxy mode"
-
+    "https://surya-news-proxy.aksharlabs2-4c9.workers.dev/?url=",
+    "./proxy.php?url=",
+    "_note: always first proxy is used, put /proxy.php?url= first if you want to use server proxy mode"
   ],
   "apiUrls": {
     "fuelPrices": { "url": "https://noc.org.np/retailprice", "type": "html" },
@@ -77,26 +76,73 @@
     ]
   },
 
-	"_note-for-dev": "below events and muhurta are not prased in real. these should be populated in events. if same event for same day is available already in existing internal data then events and muhurta should be ignored",
+  "_DEVELOPER_GUIDE": [
+    "--- EVENT OVERRIDE SCHEMA REFERENCE ---",
+    "",
+    "1. COMMON PROPERTIES (All Event Types):",
+    "   - 'event' (string): Title of the event (Required).",
+    "   - 'detail' (string): Description displayed in popup/details (Optional).",
+    "   - 'holiday' (boolean): If true, highlights the day in red (Optional, default false).",
+    "   - 'category' (string): Event category e.g., 'Jatra', 'Festival' (Optional).",
+    "   - 'remove' (boolean): Set to true to delete a matching internal event (Optional).",
+    "   - 'startYear' & 'endYear' (number): Optional filters for year-specific logic (e.g. only 2080-2090).",
+    "",
+    "2. DATE PROPERTIES (Gregorian & Bikram):",
+    "   - 'date' (string): 'MM/DD' for recurring, 'YYYY/MM/DD' for fixed.",
+    "   - 'startDate' & 'endDate' (string): 'MM/DD' to span multiple days.",
+    "",
+    "3. LUNAR PROPERTIES (Lunar Events Only):",
+    "   - 'lunarMonth' (string): Devanagari month name e.g., 'वैशाख', 'जेठ'.",
+    "   - 'paksha' (string): 'शुक्ल पक्ष' or 'कृष्ण पक्ष'.",
+    "   - 'tithi' (string): Devanagari Tithi name e.g., 'प्रतिपदा', 'द्वितीया', 'औंसी', 'पूर्णिमा'.",
+    "   - 'rule' (string): Timing rule to match event (see values below). Default: 'udaya'.",
+    "",
+    "4. RULE VALUES (For Lunar Events):",
+    "   - 'udaya': Match if Tithi prevails at sunrise OR is Kshaya (lost) but fully strictly contained within the day.",
+    "   - 'nishitha': Match if Tithi prevails during Nishitha (Midnight) window.",
+    "   - 'pradosh': Match if Tithi prevails during Pradosh (Evening) window.",
+    "   - 'madhyanna': Match if Tithi prevails during Madhyanna (Noon) window.",
+    "",
+    "--- EXAMPLES BY TYPE ---",
+    "",
+    "A. GREGORIAN (Ad Dates):",
+    "   { 'event': 'New Year', 'date': '01/01', 'holiday': true }",
+    "   { 'event': 'Conference', 'startDate': '01/05', 'endDate': '01/07', 'detail': '3 Days' }",
+    "",
+    "B. BIKRAM (Bs Dates):",
+    "   { 'event': 'Bhanu Jayanti', 'date': '03/29', 'detail': 'Recurring' }",
+    "   { 'event': 'Election', 'date': '2084/01/15', 'detail': 'One-off' }",
+    "",
+    "C. LUNAR (Tithi Based):",
+    "   { 'event': 'Mata Tirtha Aushi', 'lunarMonth': 'वैशाख', 'paksha': 'कृष्ण पक्ष', 'tithi': 'औंसी', 'holiday': true }",
+    "   { 'event': 'Shivaratri', 'lunarMonth': 'फाल्गुन', 'paksha': 'कृष्ण पक्ष', 'tithi': 'त्रयोदशी', 'rule': 'nishitha' }",
+    "",
+    "D. REMOVAL (Hiding Internal Events):",
+    "   { 'event': 'Event To Hide', 'date': '05/01', 'remove': true }",
+    "",
+    "E. MUHURTA OVERRIDE:",
+    "   'customMuhurta': { 'marriage': { '2083': { '1': [5, 12, 19] } } }",
+    "   (Replaces all marriage muhurtas for Baishakh 2083 with days 5, 12, 19)"
+  ],
   "customEvents": {
     "lunarEvents": [],
-    "gregorianEvents": [
-      {
-        "event": "Custom Demo Event",
-        "date": "12/04",
-        "detail": "This event is loaded from overrides.json",
-        "category": "Override",
-        "holiday": true
-      }
-    ],
+    "gregorianEvents": [],
     "bikramRecurringEvents": [],
-    "bikramFixedEvents": []
+    "bikramFixedEvents": [],
+    "arthikEvents": [
+      {
+        "event": "Tax (VAT) Submission",
+        "type": "Tax",
+        "date": "2082/10/25",
+        "dateSystem": "bs",
+        "startDate": "",
+        "endDate": "",
+        "color": "#10b981",
+        "detail": "Submit VAT returns for the previous month."
+      }
+    ]
   },
   "customMuhurta": {
-    "marriage": {
-      "2083": {
-        "1": [1, 6, 11, 16, 21, 26, 30]
-      }
-    }
+    "marriage": {}
   }
 }

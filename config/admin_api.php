@@ -17,7 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 
 // 2. Configuration
-$requests_dir = __DIR__ . "/requests";
+$requests_dir = dirname(__DIR__) . "/requests";
+$premium_users_file = __DIR__ . "/premium_users.json";
 $config_file = __DIR__ . "/admin_config.php";
 
 // Load external config if exists, otherwise use default
@@ -146,12 +147,62 @@ elseif ($method === 'POST' && $action === 'change_password') {
                     . "\$admin_password_hash = '" . $new_hash . "';\n"
                     . "?>";
 
-    if (file_put_contents($config_file, $config_content)) {
+    $success = file_put_contents($config_file, $config_content);
+
+    if ($success) {
         echo json_encode(["success" => true]);
     } else {
         http_response_code(500);
         echo json_encode(["error" => "Failed to update configuration file"]);
     }
+}
+elseif ($method === 'POST' && $action === 'subscribe_user') {
+    $input = json_decode(file_get_contents("php://input"), true);
+    $email = isset($input['email']) ? $input['email'] : '';
+    $phone = isset($input['phone']) ? $input['phone'] : '';
+    $name = isset($input['name']) ? $input['name'] : 'Subscribed User';
+    $tag = isset($input['tag']) ? $input['tag'] : '';
+
+    if (!$email && !$phone) {
+        http_response_code(400);
+        echo json_encode(["error" => "Email or Phone required"]);
+        exit;
+    }
+
+    $subscribed_users = [];
+    if (file_exists($premium_users_file)) {
+        $subscribed_users = json_decode(file_get_contents($premium_users_file), true);
+        if (!$subscribed_users) $subscribed_users = [];
+    }
+
+    // Check if already exists
+    $exists = false;
+    foreach ($subscribed_users as $index => $user) {
+        if (($email && $user['email'] === $email) || ($phone && $user['phone'] === $phone)) {
+            $exists = true;
+            break;
+        }
+    }
+
+    if (!$exists) {
+        $subscribed_users[] = [
+            "name" => $name,
+            "email" => $email,
+            "phone" => $phone,
+            "tag" => $tag,
+            "subscribed_at" => date('Y-m-d H:i:s')
+        ];
+        file_put_contents($premium_users_file, json_encode($subscribed_users, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+    }
+
+    echo json_encode(["success" => true]);
+}
+elseif ($method === 'GET' && $action === 'get_premium_users') {
+    $subscribed_users = [];
+    if (file_exists($premium_users_file)) {
+        $subscribed_users = json_decode(file_get_contents($premium_users_file), true);
+    }
+    echo json_encode($subscribed_users ?: []);
 }
 else {
     http_response_code(404);

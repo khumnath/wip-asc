@@ -18,7 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 // 2. Configuration
 $requests_dir = __DIR__ . "/requests";
-$admin_email = "admin@example.com"; // Still used as a secondary notify if needed
+$premium_users_file = __DIR__ . "/config/premium_users.json";
+$admin_email = "admin@example.com";
 
 // 3. Ensure requests directory exists and is protected
 if (!file_exists($requests_dir)) {
@@ -48,6 +49,27 @@ $id = time() . "_" . bin2hex(random_bytes(4));
 $payload['id'] = $id;
 $payload['status'] = 'pending';
 $payload['created_at'] = date('Y-m-d H:i:s');
+
+// 5a. Determine Category
+$is_premium = isset($payload['is_premium']) && $payload['is_premium'] === true;
+$is_subscribed = false;
+
+// Check if email/phone matches a subscribed user
+if (file_exists($premium_users_file)) {
+    $subscribed_users = json_decode(file_get_contents($premium_users_file), true);
+    if ($subscribed_users) {
+        foreach ($subscribed_users as $user) {
+            if ((!empty($payload['contact']['email']) && $user['email'] === $payload['contact']['email']) ||
+                (!empty($payload['contact']['phone']) && $user['phone'] === $payload['contact']['phone'])) {
+                $is_subscribed = true;
+                break;
+            }
+        }
+    }
+}
+
+$payload['is_premium'] = $is_premium;
+$payload['is_subscribed'] = $is_subscribed;
 
 // 6. Save to File
 $file_path = $requests_dir . "/" . $id . ".json";
