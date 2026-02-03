@@ -519,7 +519,9 @@ function getNews($category, $canFetch = true, $forceRefresh = false) {
         }
 
         // Stale but usable? Return raw string and we'll refresh later if $canFetch is false.
-        if ($cacheAge < $STALE_DURATION && !$canFetch) {
+        // If we are in "check only" mode ($canFetch=false), ALWAYS return cache if it exists,
+        // even if it's super old. Better to show old news than nothing while we update.
+        if (!$canFetch) {
             return file_get_contents($cacheFile);
         }
     }
@@ -543,20 +545,46 @@ function getNews($category, $canFetch = true, $forceRefresh = false) {
 
 // Helper to send response and keep running in background if possible
 function sendResponse($json) {
+    // Prevent script from stopping if client disconnects
+    ignore_user_abort(true);
+    set_time_limit(0);
+
     if (!$json) $json = json_encode(['error' => 'No data']);
 
     $etag = md5($json);
     header("ETag: \"$etag\"");
     header("Cache-Control: public, max-age=60");
 
+    // Check for Not Modified
     if (isset($_SERVER['HTTP_IF_NONE_MATCH']) && trim($_SERVER['HTTP_IF_NONE_MATCH'], '"') === $etag) {
         header('HTTP/1.1 304 Not Modified');
-        if (function_exists('fastcgi_finish_request')) fastcgi_finish_request();
-        else exit;
+        header('Content-Length: 0');
+        header('Connection: close');
+        if (function_exists('fastcgi_finish_request')) {
+            fastcgi_finish_request();
+        } else {
+            flush();
+        }
+        // Even if 304, we might want to refresh cache if it's old,
+        // but typically 304 means client has latest, so maybe cache is fine.
+        // But if cache is stale on server, we should refresh it for next time.
+        return;
     }
 
-    echo $json;
+    // Standard Response
+    $length = strlen($json);
+    header('Content-Length: ' . $length);
+    header('Connection: close');
 
+    // Output and Flush
+    ob_start();
+    echo $json;
+    $size = ob_get_length();
+    header("Content-Length: $size");
+    ob_end_flush();
+    flush();
+
+    // End request for FPM
     if (function_exists('fastcgi_finish_request')) {
         fastcgi_finish_request();
     }
@@ -579,22 +607,28 @@ if ($category === 'all') {
 
     foreach ($newsConfig as $cat => $feeds) {
         $cacheFile = "$CACHE_DIR/{$cat}.json";
-        $isStale = !file_exists($cacheFile) || (time() - filemtime($cacheFile) > $CACHE_DURATION);
 
-        // Get raw cache content (non-fetching)
-        $content = getNews($cat, false);
-        $allNews[] = "\"$cat\":" . ($content ?: "[]");
-
-        if ($isStale || $forceRefresh) $toRefresh[] = $cat;
+        if ($forceRefresh) {
+            // [HOT RELOAD FIX] If client requests refresh, do it NOW synchronously
+            // This ensures the response contains the FRESH data, not the old data
+            $content = getNews($cat, true, true);
+            $allNews[] = "\"$cat\":" . ($content ?: "[]");
+        } else {
+            // Standard: Return fast (stale) and mark for background refresh
+            $isStale = !file_exists($cacheFile) || (time() - filemtime($cacheFile) > $CACHE_DURATION);
+            $content = getNews($cat, false);
+            $allNews[] = "\"$cat\":" . ($content ?: "[]");
+            if ($isStale) $toRefresh[] = $cat;
+        }
     }
 
     $finalJson = "{\"mode\":\"batch\",\"categories\":{" . implode(",", $allNews) . "},\"timestamp\":" . time() . "}";
     sendResponse($finalJson);
 
-    // Refresh stale categories in the background (post-response)
-    if (!empty($toRefresh)) {
+    // Refresh stale categories in the background (only for non-forced requests)
+    if (!$forceRefresh && !empty($toRefresh)) {
         foreach ($toRefresh as $cat) {
-            getNews($cat, true, $forceRefresh);
+            getNews($cat, true, false); // canFetch=true, force=false (logic handles needed fetch)
         }
     }
 } else {

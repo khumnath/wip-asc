@@ -4,14 +4,18 @@
   "_contactMode_note": "options: 'server' (post to endpoint), 'client' (mailto), 'demo' (mock success)",
   "adminEmail": "[EMAIL_ADDRESS]",
   "newsMode": "client",
+  "aqiWorkerUrl": "https://nepal-aqi.aksharlabs2-4c9.workers.dev",
 	"_note": "if newsMode is 'server', then newsApiEndpoints will be used",
   "newsApiEndpoints": [
     "./news_api.php?category="
   ],
-  "corsProxies": [
+  "corsProxies": [],
+  "clientProxies": [
     "https://surya-news-proxy.aksharlabs2-4c9.workers.dev/?url=",
-    "./proxy.php?url=",
-    "_note: always first proxy is used, put /proxy.php?url= first if you want to use server proxy mode"
+    "https://api.allorigins.win/get?url="
+  ],
+  "serverProxies": [
+    "./proxy.php?url="
   ],
   "apiUrls": {
     "fuelPrices": { "url": "https://noc.org.np/retailprice", "type": "html" },
