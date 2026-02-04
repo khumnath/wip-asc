@@ -20,7 +20,7 @@
   "apiUrls": {
     "fuelPrices": { "url": "https://noc.org.np/retailprice", "type": "html" },
     "vegetablePrices": { "url": "https://kalimatimarket.gov.np/price", "type": "html" },
-    "goldPrices": { "url": "https://www.hamropatro.com/gold", "type": "html" },
+    "goldPrices": { "url": "./gold_api.php", "type": "json" },
     "forexRates": { "url": "https://www.nrb.org.np/api/forex/v1/rates", "type": "json" }
   },
   "newsFeeds": {
