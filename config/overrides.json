@@ -25,65 +25,40 @@
   },
   "newsFeeds": {
     "fresh": [
-      { "url": "https://www.onlinekhabar.com/feed", "type": "rss", "sourceName": "OnlineKhabar" },
-      { "url": "https://www.setopati.com/", "type": "html", "sourceName": "Setopati" },
-      { "url": "https://ratopati.com", "type": "html", "sourceName": "Ratopati" },
-      { "url": "https://annapurnapost.com", "type": "html", "sourceName": "Annapurna Post" },
-      { "url": "https://nagariknews.nagariknetwork.com/feed", "type": "rss", "sourceName": "Nagarik News" },
-      { "url": "https://www.himalkhabar.com/feed", "type": "rss", "sourceName": "Himalalkhabar" },
-      { "url": "https://nepalnews.com/feed", "type": "rss", "sourceName": "Nepal News" },
-      { "url": "https://kalopati.com/kp_api/app/v1/posts", "type": "json", "sourceName": "Kalopati" }
+      { "url": "https://kalopati.com/kp_api/app/v1/posts", "type": "json", "sourceName": "Kalopati" },
+      { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=97", "type": "json", "sourceName": "Artha Sarokar" },
+      { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=3", "type": "json", "sourceName": "Artha Khabar" },
+      { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=4", "type": "json", "sourceName": "Banking Sansar" }
     ],
     "rajniti": [
-      { "url": "https://www.onlinekhabar.com/politics", "type": "html", "sourceName": "OnlineKhabar" },
-      { "url": "https://www.setopati.com/politics", "type": "html", "sourceName": "Setopati" },
-      { "url": "https://ratopati.com/category/politics", "type": "html", "sourceName": "Ratopati" },
-      { "url": "https://annapurnapost.com/news/politics", "type": "html", "sourceName": "Annapurna Post" },
-			{ "url": "https://kalopati.com/kp_api/app/v1/get-category/1/10", "type": "json", "sourceName": "Kalopati Politics" }
+      { "url": "https://kalopati.com/kp_api/app/v1/get-category/1/10", "type": "json", "sourceName": "Kalopati" },
+      { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=205", "type": "json", "sourceName": "Artha Sarokar" },
+      { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=6", "type": "json", "sourceName": "Artha Khabar" }
     ],
     "artha": [
-      { "url": "https://www.onlinekhabar.com/business", "type": "html", "sourceName": "OnlineKhabar" },
-      { "url": "https://www.setopati.com/market", "type": "html", "sourceName": "Setopati" },
-      { "url": "https://bizmandu.com/feed", "type": "rss", "sourceName": "Bizmandu" },
-      { "url": "https://merolagani.com/feed", "type": "rss", "sourceName": "Merolagani" },
-      { "url": "https://bankingsansar.com/bs_api/app/v1/posts", "type": "json", "sourceName": "Banking Sansar" },
-      { "url": "https://arthakhabar.com/ak_api/app/v1/posts", "type": "json", "sourceName": "Artha Khabar" },
-      { "url": "https://kalopati.com/kp_api/app/v1/get-category/10/10", "type": "json", "sourceName": "Kalopati Business" }
+      { "url": "https://kalopati.com/kp_api/app/v1/get-category/10/10", "type": "json", "sourceName": "Kalopati" },
+      { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=149", "type": "json", "sourceName": "Artha Sarokar" },
+      { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=93", "type": "json", "sourceName": "Artha Sarokar" },
+      { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=102", "type": "json", "sourceName": "Artha Sarokar" },
+      { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=36", "type": "json", "sourceName": "Artha Khabar" },
+      { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=28", "type": "json", "sourceName": "Artha Khabar" },
+      { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=45", "type": "json", "sourceName": "Artha Khabar" },
+      { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=25", "type": "json", "sourceName": "Banking Sansar" },
+      { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=26", "type": "json", "sourceName": "Banking Sansar" },
+      { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=17", "type": "json", "sourceName": "Banking Sansar" }
     ],
     "sports": [
-      { "url": "https://www.onlinekhabar.com/sports", "type": "html", "sourceName": "OnlineKhabar" },
-      { "url": "https://www.setopati.com/sports", "type": "html", "sourceName": "Setopati" },
-      { "url": "https://www.ratopati.com/category/sports", "type": "html", "sourceName": "Ratopati" },
-      { "url": "https://annapurnapost.com/news/sports", "type": "html", "sourceName": "Annapurna Post" },
-	    { "url": "https://hamrokhelkud.com/feed", "type": "rss", "sourceName": "Hamrokhelkud" },
       { "url": "https://kalopati.com/kp_api/app/v1/get-category/666/10", "type": "json", "sourceName": "Kalopati Sports" }
     ],
     "tech": [
-      { "url": "https://www.onlinekhabar.com/technology/feed", "type": "rss", "sourceName": "OnlineKhabar" },
-      { "url": "https://techpana.com/feed", "type": "rss", "sourceName": "Techpana" },
-      { "url": "https://ictframe.com/feed", "type": "rss", "sourceName": "ICT Frame" }
-    ],
-    "health": [
-      { "url": "https://www.onlinekhabar.com/health", "type": "html", "sourceName": "OnlineKhabar" },
-      { "url": "https://swasthyakhabar.com/main-news", "type": "html", "sourceName": "Swasthyakhabar" },
-      { "url": "https://kalopati.com/kp_api/app/v1/get-category/263/10", "type": "json", "sourceName": "Kalopati Health" }
+      { "url": "https://kalopati.com/kp_api/app/v1/get-category/703/10", "type": "json", "sourceName": "Kalopati Tech" }
     ],
     "entertainment": [
-      { "url": "https://www.onlinekhabar.com/entertainment/feed", "type": "rss", "sourceName": "OnlineKhabar" },
-      { "url": "https://www.setopati.com/art", "type": "html", "sourceName": "Setopati" },
-      { "url": "https://artistkhabar.com/feed", "type": "rss", "sourceName": "Artist Khabar" },
       { "url": "https://kalopati.com/kp_api/app/v1/get-category/703/10", "type": "json", "sourceName": "Kalopati Ent" }
     ],
     "english": [
-        { "url": "https://english.onlinekhabar.com/feed", "type": "rss", "sourceName": "OnlineKhabar" },
-        { "url": "https://nepalnews.com/feed", "type": "rss", "sourceName": "Nepal News" },
-        { "url": "https://english.ratopati.com/", "type": "html", "sourceName": "Ratopati" },
-        { "url": "https://kathmandupost.com/", "type": "html", "sourceName": "Kathmandu Post" },
-        { "url": "https://myrepublica.nagariknetwork.com/", "type": "html", "sourceName": "My Republica" }
-    ],
-    "international": [
-      { "url": "https://www.onlinekhabar.com/content/news/international/feed", "type": "rss", "sourceName": "OnlineKhabar" },
-      { "url": "https://www.setopati.com/global", "type": "html", "sourceName": "Setopati" }
+        { "url": "https://english.kalopati.com/kp_api/wp/v2/posts", "type": "json", "sourceName": "Kalopati English" },
+        { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=590", "type": "json", "sourceName": "Artha Sarokar English" }
     ]
   },
 
@@ -142,14 +117,709 @@
     "bikramFixedEvents": [],
     "arthikEvents": [
       {
-        "event": "Tax (VAT) Submission",
+        "event": "चैत्र महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2082/01/25",
+        "dateSystem": "bs",
+        "color": "#34d399",
+        "detail": "चैत्र महिनाको अन्तः शुल्क, TDS विवरण तथा रकम दाखिला गर्ने गर्ने दिन । चैत्र महिनाको विलासिता शुल्क, मनोरञ्जन कर बापतको रकम भुक्तानी गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "बजेट आउने दिन",
+        "type": "Tax",
+        "date": "2082/02/15",
+        "dateSystem": "bs",
+        "color": "#f87171",
+        "detail": "बजेट आउने दिन"
+      },
+      {
+        "event": "बैसाख महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2082/02/25",
+        "dateSystem": "bs",
+        "color": "#34d399",
+        "detail": "बैसाख महिनाको अन्तःशुल्क, TDS विवरण तथा रकम दाखिला गर्ने गर्ने दिन । बैसाख महिनाको विलासिता शुल्क, मनोरञ्जन कर बापतको रकम भुक्तानी गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "जेठ महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2082/03/25",
+        "dateSystem": "bs",
+        "color": "#34d399",
+        "detail": "जेठ महिनाको अन्तःशुल्क, TDS विवरण तथा रकम दाखिला गर्ने गर्ने दिन । जेठ महिनाको विलासिता शुल्क, मनोरञ्जन कर बापतको रकम भुक्तानी गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "असार महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2082/04/25",
+        "dateSystem": "bs",
+        "color": "#34d399",
+        "detail": "चौमासिक VAT विवरण बुझाउनेहरुले असारसम्मको विवरण र रकम बुझाउने अन्तिम दिन । असार महिनाको अन्तःशुल्क, TDS विवरण तथा रकम दाखिला गर्ने गर्ने दिन ।"
+      },
+      {
+        "event": "साउन महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2082/05/25",
+        "dateSystem": "bs",
+        "color": "#34d399",
+        "detail": "साउन महिनाको अन्तःशुल्क, TDS विवरण तथा रकम दाखिला गर्ने गर्ने दिन । साउन महिनाको विलासिता शुल्क, मनोरञ्जन कर बापतको रकम भुक्तानी गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "भदौ महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2082/06/25",
+        "dateSystem": "bs",
+        "color": "#34d399",
+        "detail": "द्वौमासिक VAT विवरण बुझाउनेहरुले भदौसम्मको विवरण र रकम बुझाउने अन्तिम दिन । भदौ महिनाको अन्तःशुल्क, TDS विवरण तथा रकम दाखिला गर्ने गर्ने दिन ।"
+      },
+      {
+        "event": "आयव्यव विवरण बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2082/06/31",
+        "dateSystem": "bs",
+        "color": "#fbbf24",
+        "detail": "म्याद थप नभएको खण्डमा आयव्यव विवरण बुझाउने अन्तिम दिन"
+      },
+      {
+        "event": "असोज महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2082/07/25",
+        "dateSystem": "bs",
+        "color": "#34d399",
+        "detail": "असोज महिनाको अन्तःशुल्क, TDS विवरण तथा रकम दाखिला गर्ने गर्ने दिन । असोज महिनाको विलासिता शुल्क, मनोरञ्जन कर बापतको रकम भुक्तानी गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "कर सप्ताह सुरु",
+        "type": "Tax",
+        "date": "2082/08/01",
+        "endDate": "2082/08/07",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "कर सप्ताह (मंशिर १ - ७)"
+      },
+      {
+        "event": "कार्तिक महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2082/08/25",
+        "dateSystem": "bs",
+        "color": "#34d399",
+        "detail": "द्वौमासिक/चौमासिक VAT विवरण बुझाउनेहरुले कार्तिकसम्मको विवरण र रकम बुझाउने अन्तिम दिन । कार्तिक महिनाको अन्तःशुल्क, TDS विवरण तथा रकम दाखिला गर्ने दिन ।"
+      },
+      {
+        "event": "आय व्यव विवरण बुझाउने अन्तिम दिन (म्याद थप)",
+        "type": "Tax",
+        "date": "2082/08/30",
+        "dateSystem": "bs",
+        "color": "#fbbf24",
+        "detail": "मंशिर मसान्तसम्म म्याद थप भएकाहरुको हकमा अघिल्लो आर्थिक बर्षको आय व्यव विवरण बुझाउने अन्तिम दिन"
+      },
+      {
+        "event": "मंशिर महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2082/09/25",
+        "dateSystem": "bs",
+        "color": "#34d399",
+        "detail": "मंशिर महिनाको अन्तःशुल्क, TDS विवरण तथा रकम दाखिला गर्ने गर्ने दिन । मंशिर महिनाको विलासिता शुल्क, मनोरञ्जन कर बापतको रकम भुक्तानी गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "आय व्यव विवरण बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2082/09/30",
+        "dateSystem": "bs",
+        "color": "#f87171",
+        "detail": "अघिल्लो आर्थिक बर्षको आय व्यव विवरण बुझाउने अन्तिम दिन"
+      },
+      {
+        "event": "पुष महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
         "type": "Tax",
         "date": "2082/10/25",
         "dateSystem": "bs",
-        "startDate": "",
-        "endDate": "",
-        "color": "#10b981",
-        "detail": "Submit VAT returns for the previous month."
+        "color": "#34d399",
+        "detail": "द्वौमासिक VAT विवरण बुझाउनेहरुले पुषसम्मको विवरण र रकम बुझाउने अन्तिम दिन । पुष महिनाको अन्तःशुल्क, TDS विवरण तथा रकम दाखिला गर्ने गर्ने दिन ।"
+      },
+      {
+        "event": "माघ महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2082/11/25",
+        "dateSystem": "bs",
+        "color": "#34d399",
+        "detail": "माघ महिनाको अन्तःशुल्क, TDS विवरण तथा रकम दाखिला गर्ने गर्ने दिन । माघ महिनाको विलासिता शुल्क, मनोरञ्जन कर बापतको रकम भुक्तानी गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "फागुन महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2082/12/25",
+        "dateSystem": "bs",
+        "color": "#34d399",
+        "detail": "द्वौमासिक/चौमासिक VAT विवरण बुझाउनेहरुले फागुनसम्मको विवरण र रकम बुझाउने अन्तिम दिन । फागुन महिनाको अन्तःशुल्क, TDS विवरण तथा रकम दाखिला गर्ने दिन ।"
+      },
+      {
+        "event": "चैत्र महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2083/01/25",
+        "dateSystem": "bs",
+        "color": "#34d399",
+        "detail": "चैत्र महिनाको अन्तः शुल्क, TDS विवरण तथा रकम दाखिला गर्ने गर्ने दिन । चैत्र महिनाको विलासिता शुल्क, मनोरञ्जन कर बापतको रकम भुक्तानी गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "बजेट आउने दिन 2083",
+        "type": "Tax",
+        "date": "2083/02/15",
+        "dateSystem": "bs",
+        "color": "#f87171",
+        "detail": "बजेट आउने दिन"
+      },
+      {
+        "event": "बैसाख महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2083/02/25",
+        "dateSystem": "bs",
+        "color": "#34d399",
+        "detail": "बैसाख महिनाको अन्तःशुल्क, TDS विवरण तथा रकम दाखिला गर्ने गर्ने दिन । बैसाख महिनाको विलासिता शुल्क, मनोरञ्जन कर बापतको रकम भुक्तानी गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "जेठ महिनाको मासिक VAT विवरण र रकम बुझाउने अन्तिम दिन",
+        "type": "Tax",
+        "date": "2083/03/25",
+        "dateSystem": "bs",
+        "color": "#34d399",
+        "detail": "जेठ महिनाको अन्तःशुल्क, TDS विवरण तथा रकम दाखिला गर्ने गर्ने दिन । जेठ महिनाको विलासिता शुल्क, मनोरञ्जन कर बापतको रकम भुक्तानी गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "सामाजिक सुरक्षा कोष रकम भुक्तानी (आषाढ)",
+        "type": "Business",
+        "date": "2082/04/32",
+        "dateSystem": "bs",
+        "color": "#a78bfa",
+        "detail": "आषाढ महिनाको सामाजिक सुरक्षा कोषमा रकम भुक्तानी गर्ने अन्तिम दिन"
+      },
+      {
+        "event": "त्रैमासिक विवरण पेश (बीमा/धितोपत्र बोर्ड)",
+        "type": "Business",
+        "date": "2082/04/32",
+        "dateSystem": "bs",
+        "color": "#a78bfa",
+        "detail": "बीमा वा पुनर्बीमा कम्पनीले त्रैमासिक वित्तीय विवरण बीमा प्राधिकरणमा पेश गर्ने अन्तिम दिन । सूचिकृत कम्पनीले त्रैमासिक विवरण धितोपत्र बोर्ड समक्ष पेश गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "बैंक वित्तीय विवरण पेश (NRB)",
+        "type": "Business",
+        "date": "2082/06/31",
+        "dateSystem": "bs",
+        "color": "#a78bfa",
+        "detail": "बैंक तथा वित्तीय संस्थाले NRB मा वासलात तथा नाफा नोक्सान विवरण पेश गर्नुपर्ने अन्तिम दिन"
+      },
+      {
+        "event": "त्रैमासिक विवरण पेश (बीमा/धितोपत्र बोर्ड)",
+        "type": "Business",
+        "date": "2082/07/30",
+        "dateSystem": "bs",
+        "color": "#a78bfa",
+        "detail": "बीमा वा पुनर्बीमा कम्पनीले त्रैमासिक वित्तीय विवरण बीमा प्राधिकरणमा पेश गर्ने अन्तिम दिन । सूचिकृत कम्पनीले त्रैमासिक विवरण धितोपत्र बोर्ड समक्ष पेश गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "वार्षिक प्रतिवेदन पेश (धितोपत्र बोर्ड)",
+        "type": "Business",
+        "date": "2082/08/29",
+        "dateSystem": "bs",
+        "color": "#a78bfa",
+        "detail": "सूचिकृत कम्पनीले गत आर्थिक वर्षको वार्षिक प्रतिवेदन धितोपत्र बोर्ड समक्ष पेश गर्ने अन्तिम दिन"
+      },
+      {
+        "event": "कम्पनी रजिष्ट्रार विवरण बुझाउने",
+        "type": "Business",
+        "date": "2082/09/30",
+        "dateSystem": "bs",
+        "color": "#a78bfa",
+        "detail": "कम्पनी रजिष्ट्रार कार्यालयमा कम्पनीको गत आ.व. को वार्षिक विवरण र अन्य कागजात बुझाउन पर्ने अन्तिम दिन । बीमा वा पुनर्बीमा कम्पनीले बीमा प्राधिकरणमा गत आ.व. को लेखापरीक्षण भएको वासलात तथा नाफा नोक्सान विवरण पेश गर्नुपर्ने अन्तिम दिन"
+      },
+      {
+        "event": "त्रैमासिक विवरण पेश (बीमा/धितोपत्र बोर्ड)",
+        "type": "Business",
+        "date": "2082/10/29",
+        "dateSystem": "bs",
+        "color": "#a78bfa",
+        "detail": "बीमा वा पुनर्बीमा कम्पनीले त्रैमासिक वित्तीय विवरण बीमा प्राधिकरणमा पेश गर्ने अन्तिम दिन । सूचिकृत कम्पनीले त्रैमासिक विवरण धितोपत्र बोर्ड समक्ष पेश गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "सामाजिक सुरक्षा कोष रकम भुक्तानी (माघ)",
+        "type": "Business",
+        "date": "2082/11/15",
+        "dateSystem": "bs",
+        "color": "#a78bfa",
+        "detail": "माघ महिनाको सामाजिक सुरक्षा कोषमा रकम भुक्तानी गर्ने अन्तिम दिन"
+      },
+      {
+        "event": "सामाजिक सुरक्षा कोष रकम भुक्तानी (फागुन)",
+        "type": "Business",
+        "date": "2082/12/15",
+        "dateSystem": "bs",
+        "color": "#a78bfa",
+        "detail": "फागुन महिनाको सामाजिक सुरक्षा कोषमा रकम भुक्तानी गर्ने अन्तिम दिन"
+      },
+      {
+        "event": "अनुमानित कर (दोस्रो किस्ता 70%) / लेखापरीक्षण नतिजा / ब्लूबुक",
+        "type": "Business",
+        "date": "2082/12/30",
+        "dateSystem": "bs",
+        "color": "#a78bfa",
+        "detail": "चालु आ.व. २०८२/८३ को अनुमानित करको दोस्रो किस्ता वापतको ७०% रकम बुझाउने साथै अनुमानित विवरण संशोधन गर्ने अन्तिम दिन । बैंक तथा वित्तीय संस्थाले गत आर्थिक वर्षमा लेखापरीक्षण गरेको वासलात तथा नाफा नोक्सान खाता प्रकाशित गर्नुपर्ने अन्तिम दिन । गाडीको ब्लू–बुक नवीकरण गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "सामाजिक सुरक्षा कोष रकम भुक्तानी (चैत्र)",
+        "type": "Business",
+        "date": "2083/01/15",
+        "dateSystem": "bs",
+        "color": "#a78bfa",
+        "detail": "चैत्र महिनाको सामाजिक सुरक्षा कोषमा रकम भुक्तानी गर्ने अन्तिम दिन"
+      },
+      {
+        "event": "त्रैमासिक विवरण पेश (बीमा/धितोपत्र बोर्ड)",
+        "type": "Business",
+        "date": "2083/01/31",
+        "dateSystem": "bs",
+        "color": "#a78bfa",
+        "detail": "बीमा वा पुनर्बीमा कम्पनीले त्रैमासिक वित्तीय विवरण बीमा प्राधिकरणमा पेश गर्ने अन्तिम दिन । सूचिकृत कम्पनीले त्रैमासिक विवरण धितोपत्र बोर्ड समक्ष पेश गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "अनुमानित कर (तेस्रो किस्ता 100%)",
+        "type": "Business",
+        "date": "2083/03/32",
+        "dateSystem": "bs",
+        "color": "#a78bfa",
+        "detail": "चालु आ.व. २०८२/८३ को अनुमानित करको तेस्रो किस्ता वापतको १००% रकम बुझाउने साथै अनुमानित विवरण संशोधन गर्ने अन्तिम दिन । बैंक तथा वित्तीय संस्थाले गत आर्थिक वर्षमा लेखापरीक्षण गरेको वासलात तथा नाफा नोक्सान खाता प्रकाशित गर्नुपर्ने अन्तिम दिन । गाडीको ब्लू–बुक नवीकरण गर्ने अन्तिम दिन ।"
+      },
+      {
+        "event": "सिटिजन्स बैंक इन्टरनेशनल लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/01/07",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "सिटिजन्स बैंक इन्टरनेशनल लिमिटेड (Citizens Bank International Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "नेपाल राष्ट्र बैंक वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/01/14",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "नेपाल राष्ट्र बैंक (Nepal Rastra Bank) बार्षिकोत्सव"
+      },
+      {
+        "event": "एभरेष्ट बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/02/03",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "एभरेष्ट बैंक लिमिटेड (Everest Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "महालक्ष्मी बिकास बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/02/07",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "महालक्ष्मी बिकास बैंक लिमिटेड (Mahalaxmi Bikas Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "नेपाल एसबिआई बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/03/23",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "नेपाल एसबिआई बैंक लिमिटेड (Nepal SBI Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "लुम्बिनी बिकास बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/03/25",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "लुम्बिनी बिकास बैंक लिमिटेड (Lumbini Bikas Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "नबिल बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/03/28",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "नबिल बैंक लिमिटेड (Nabil Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "सालपा बिकास बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/04/01",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "सालपा बिकास बैंक लिमिटेड (Salpa Bikas Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "एनआईसी एशिया बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/04/07",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "एनआईसी एशिया बैंक लिमिटेड (NIC Asia Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "ज्योति बिकास बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/04/09",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "ज्योति बिकास बैंक लिमिटेड (Jyoti Bikas Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "ग्रीन डेभलपमेन्ट बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/05/09",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "ग्रीन डेभलपमेन्ट बैंक लिमिटेड (Green Development Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "सिन्धु बिकास बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/05/24",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "सिन्धु बिकास बैंक लिमिटेड (Sindhu Bikas Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "प्राइम कमर्सियल बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/06/07",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "प्राइम कमर्सियल बैंक लिमिटेड (Prime Commercial Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "सप्तकोशी डेभलपमेन्ट बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/06/16",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "सप्तकोशी डेभलपमेन्ट बैंक लिमिटेड (Saptakoshi Development Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "माछापुच्छ्रे बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/06/18",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "माछापुच्छ्रे बैंक लिमिटेड (Machhapuchhre Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "मितेरी डेभलपमेन्ट बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/06/27",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "मितेरी डेभलपमेन्ट बैंक लिमिटेड (Miteri Development Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "कामना सेवा बिकास बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/07/27",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "कामना सेवा बिकास बैंक लिमिटेड (Kamana Sewa Bikas Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "नेपाल बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/07/30",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "नेपाल बैंक लिमिटेड (Nepal Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "गरिमा बिकास बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/08/09",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "गरिमा बिकास बैंक लिमिटेड (Garima Bikas Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "सानिमा बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/08/21",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "सानिमा बैंक लिमिटेड (Sanima Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "सिद्धार्थ बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/09/09",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "सिद्धार्थ बैंक लिमिटेड (Siddhartha Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "ग्लोबल आईएमई बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/09/17",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "ग्लोबल आईएमई बैंक लिमिटेड (Global IME Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "मुक्तिनाथ बिकास बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/09/19",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "मुक्तिनाथ बिकास बैंक लिमिटेड (Muktinath Bikas Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "हिमालयन बैंक लि. वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/10/05",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "हिमालयन बैंक लि. (Himalayan Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "कृषि बिकास बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/10/07",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "कृषि बिकास बैंक लिमिटेड (Agricultural Development Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "राष्ट्रिय बाणिज्य बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/10/10",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "राष्ट्रिय बाणिज्य बैंक लिमिटेड (Rastriya Banijya Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "स्ट्याण्डर्ड चार्टर्ड बैंक नेपाल लि. वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/10/16",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "स्ट्याण्डर्ड चार्टर्ड बैंक नेपाल लि. (Standard Chartered Bank Nepal Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "एक्सेल डेभलपमेन्ट बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/11/07",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "एक्सेल डेभलपमेन्ट बैंक लिमिटेड (Excel Development Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "साइन रेशुङ्गा डेभलपमेन्ट बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/11/11",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "साइन रेशुङ्गा डेभलपमेन्ट बैंक लिमिटेड (Shine Resunga Development Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "नेपाल इन्भेष्टमेन्ट मेगा बैंक लि. वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/11/14",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "नेपाल इन्भेष्टमेन्ट मेगा बैंक लि. (Nepal Investment Mega Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "कुमारी बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/12/21",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "कुमारी बैंक लिमिटेड (Kumari Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "लक्ष्मी सनराइज बैंक लिमिटेड वार्षिकोत्सव",
+        "type": "Banking",
+        "date": "2082/12/19",
+        "dateSystem": "bs",
+        "color": "#60a5fa",
+        "detail": "लक्ष्मी सनराइज बैंक लिमिटेड (Laxmi Sunrise Bank Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "एशियन लाइफ इन्स्योरेन्स कम्पनी लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/03/13",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "एशियन लाइफ इन्स्योरेन्स कम्पनी लिमिटेड (Asian Life Insurance Co. Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "सगरमाथा लुम्बिनी इन्स्योरेन्स कम्पनी लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/03/22",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "सगरमाथा लुम्बिनी इन्स्योरेन्स कम्पनी लिमिटेड (Sagarmatha Lumbini Insurance Co. Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "नेशनल इन्स्योरेन्स कम्पनी लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/03/27",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "नेशनल इन्स्योरेन्स कम्पनी लिमिटेड (National Insurance Co. Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "प्रभु महालक्ष्मी लाइफ इन्स्योरेन्स लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/04/05",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "प्रभु महालक्ष्मी लाइफ इन्स्योरेन्स लिमिटेड (Prabhu Mahalaxmi Life Insurance Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "शिखर इन्स्योरेन्स कम्पनी लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/05/02",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "शिखर इन्स्योरेन्स कम्पनी लिमिटेड (Shikhar Insurance Co. Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "हिमालयन एभरेष्ट इन्स्योरेन्स लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/05/13",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "हिमालयन एभरेष्ट इन्स्योरेन्स लिमिटेड (Himalayan Everest Insurance Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "लाइफ इन्स्योरेन्स कर्पोरेशन (नेपाल) लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/05/16",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "लाइफ इन्स्योरेन्स कर्पोरेशन (नेपाल) लिमिटेड (Life Insurance Corporation (Nepal) Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "आईएमई लाइफ इन्स्योरेन्स कम्पनी लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/06/10",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "आईएमई लाइफ इन्स्योरेन्स कम्पनी लिमिटेड (IME Life Insurance Co. Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "सूर्यज्योति लाइफ इन्स्योरेन्स कम्पनी लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/06/23",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "सूर्यज्योति लाइफ इन्स्योरेन्स कम्पनी लिमिटेड (Suryajyoti Life Insurance Co. Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "सिद्धार्थ प्रिमियर इन्स्योरेन्स लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/06/26",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "सिद्धार्थ प्रिमियर इन्स्योरेन्स लिमिटेड (Siddhartha Premier Insurance Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "आइजीआई प्रुडेन्सियल इन्स्योरेन्स लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/06/29",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "आइजीआई प्रुडेन्सियल इन्स्योरेन्स लिमिटेड (IGI Prudential Insurance Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "सन नेपाल लाइफ इन्स्योरेन्स लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/07/01",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "सन नेपाल लाइफ इन्स्योरेन्स लिमिटेड (Sun Nepal Life Insurance Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "मेटलाइफ इन्स्योरेन्स लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/07/02",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "मेटलाइफ इन्स्योरेन्स लिमिटेड (MetLife Insurance Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "हिमालयन एभरेष्ट इन्स्योरेन्स लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/07/26",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "हिमालयन एभरेष्ट इन्स्योरेन्स लिमिटेड (Himalayan Everest Insurance Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "सिद्धार्थ प्रिमियर इन्स्योरेन्स लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/08/06",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "सिद्धार्थ प्रिमियर इन्स्योरेन्स लिमिटेड (Siddhartha Premier Insurance Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "सानिमा रिलायन्स लाइफ इन्स्योरेन्स लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/08/21",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "सानिमा रिलायन्स लाइफ इन्स्योरेन्स लिमिटेड (Sanima Reliance Life Insurance Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "नेशनल लाइफ इन्स्योरेन्स कम्पनी लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/08/24",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "नेशनल लाइफ इन्स्योरेन्स कम्पनी लिमिटेड (National Life Insurance Co. Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "एनएलजी इन्स्योरेन्स कम्पनी लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/09/05",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "एनएलजी इन्स्योरेन्स कम्पनी लिमिटेड (NLG Insurance Co. Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "राष्ट्रिय बीमा संस्थान वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/09/17",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "राष्ट्रिय बीमा संस्थान (Rastriya Beema Sansthan) बार्षिकोत्सव"
+      },
+      {
+        "event": "नेको इन्सुरेन्स लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/11/01",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "नेको इन्सुरेन्स लिमिटेड (Neco Insurance Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "प्रभु इन्स्योरेन्स लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/11/23",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "प्रभु इन्स्योरेन्स लिमिटेड (Prabhu Insurance Ltd.) बार्षिकोत्सव"
+      },
+      {
+        "event": "नेपाल लाइफ इन्स्योरेन्स कम्पनी लिमिटेड वार्षिकोत्सव",
+        "type": "Insurance",
+        "date": "2082/12/22",
+        "dateSystem": "bs",
+        "color": "#f472b6",
+        "detail": "नेपाल लाइफ इन्स्योरेन्स कम्पनी लिमिटेड (Nepal Life Insurance Co. Ltd.) बार्षिकोत्सव"
       }
     ]
   },
