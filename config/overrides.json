@@ -24,43 +24,44 @@
     "forexRates": { "url": "https://www.nrb.org.np/api/forex/v1/rates", "type": "json" }
   },
   "newsFeeds": {
-    "fresh": [
-      { "url": "https://kalopati.com/kp_api/app/v1/posts", "type": "json", "sourceName": "Kalopati" },
-      { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=97", "type": "json", "sourceName": "Artha Sarokar" },
-      { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=3", "type": "json", "sourceName": "Artha Khabar" },
-      { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=4", "type": "json", "sourceName": "Banking Sansar" }
-    ],
-    "rajniti": [
-      { "url": "https://kalopati.com/kp_api/app/v1/get-category/1/10", "type": "json", "sourceName": "Kalopati" },
-      { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=205", "type": "json", "sourceName": "Artha Sarokar" },
-      { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=6", "type": "json", "sourceName": "Artha Khabar" }
-    ],
-    "artha": [
-      { "url": "https://kalopati.com/kp_api/app/v1/get-category/10/10", "type": "json", "sourceName": "Kalopati" },
-      { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=149", "type": "json", "sourceName": "Artha Sarokar" },
-      { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=93", "type": "json", "sourceName": "Artha Sarokar" },
-      { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=102", "type": "json", "sourceName": "Artha Sarokar" },
-      { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=36", "type": "json", "sourceName": "Artha Khabar" },
-      { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=28", "type": "json", "sourceName": "Artha Khabar" },
-      { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=45", "type": "json", "sourceName": "Artha Khabar" },
-      { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=25", "type": "json", "sourceName": "Banking Sansar" },
-      { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=26", "type": "json", "sourceName": "Banking Sansar" },
-      { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=17", "type": "json", "sourceName": "Banking Sansar" }
-    ],
-    "sports": [
-      { "url": "https://kalopati.com/kp_api/app/v1/get-category/666/10", "type": "json", "sourceName": "Kalopati Sports" }
-    ],
-    "tech": [
-      { "url": "https://kalopati.com/kp_api/app/v1/get-category/703/10", "type": "json", "sourceName": "Kalopati Tech" }
-    ],
-    "entertainment": [
-      { "url": "https://kalopati.com/kp_api/app/v1/get-category/703/10", "type": "json", "sourceName": "Kalopati Ent" }
-    ],
-    "english": [
-        { "url": "https://english.kalopati.com/kp_api/wp/v2/posts", "type": "json", "sourceName": "Kalopati English" },
-        { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=590", "type": "json", "sourceName": "Artha Sarokar English" }
-    ]
-  },
+  "fresh": [
+    { "url": "https://kalopati.com/kp_api/app/v1/posts", "type": "json", "sourceName": "कालोपाटी" },
+    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=97", "type": "json", "sourceName": "अर्थ सरोकार" },
+    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=3", "type": "json", "sourceName": "अर्थ खबर" },
+    { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=4", "type": "json", "sourceName": "बैंकिङ संसार" }
+  ],
+  "rajniti": [
+    { "url": "https://kalopati.com/kp_api/app/v1/get-category/1/10", "type": "json", "sourceName": "कालोपाटी" },
+    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=205", "type": "json", "sourceName": "अर्थ सरोकार" },
+    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=6", "type": "json", "sourceName": "अर्थ खबर" }
+  ],
+  "artha": [
+    { "url": "https://kalopati.com/kp_api/app/v1/get-category/10/10", "type": "json", "sourceName": "कालोपाटी" },
+    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=149", "type": "json", "sourceName": "अर्थ सरोकार" },
+    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=93", "type": "json", "sourceName": "अर्थ सरोकार" },
+    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=102", "type": "json", "sourceName": "अर्थ सरोकार" },
+    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=36", "type": "json", "sourceName": "अर्थ खबर" },
+    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=28", "type": "json", "sourceName": "अर्थ खबर" },
+    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=45", "type": "json", "sourceName": "अर्थ खबर" },
+    { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=25", "type": "json", "sourceName": "बैंकिङ संसार" },
+    { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=26", "type": "json", "sourceName": "बैंकिङ संसार" },
+    { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=17", "type": "json", "sourceName": "बैंकिङ संसार" }
+  ],
+  "sports": [
+    { "url": "https://kalopati.com/kp_api/app/v1/get-category/666/10", "type": "json", "sourceName": "कालोपाटी खेलकुद" }
+  ],
+  "tech": [
+    { "url": "https://kalopati.com/kp_api/app/v1/get-category/703/10", "type": "json", "sourceName": "कालोपाटी प्रविधि" }
+  ],
+  "entertainment": [
+    { "url": "https://kalopati.com/kp_api/app/v1/get-category/703/10", "type": "json", "sourceName": "कालोपाटी मनोरञ्जन" }
+  ],
+  "english": [
+    { "url": "https://english.kalopati.com/kp_api/wp/v2/posts", "type": "json", "sourceName": "कालोपाटी अंग्रेजी" },
+    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=590", "type": "json", "sourceName": "अर्थ सरोकार अंग्रेजी" }
+  ]
+},
+
 
   "_DEVELOPER_GUIDE": [
     "--- EVENT OVERRIDE SCHEMA REFERENCE ---",
