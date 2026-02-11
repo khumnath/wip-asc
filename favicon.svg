@@ -1,0 +1,17 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="sun-grad" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 256) rotate(90) scale(256)">
+      <stop offset="0%" stop-color="#FFEB3B" />
+      <stop offset="100%" stop-color="#FFC107" />
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <g filter="url(#glow)">
+    <path d="M 383.2 229.0 Q 445.3 239.4 506.0 256.0 Q 445.3 272.6 383.2 283.0 L 379.6 296.2 Q 428.2 336.3 472.5 381.0 Q 411.6 365.0 352.6 343.0 L 343.0 352.6 Q 365.0 411.6 381.0 472.5 Q 336.3 428.2 296.2 379.6 L 283.0 383.2 Q 272.6 445.3 256.0 506.0 Q 239.4 445.3 229.0 383.2 L 215.8 379.6 Q 175.7 428.2 131.0 472.5 Q 147.0 411.6 169.0 352.6 L 159.4 343.0 Q 100.4 365.0 39.5 381.0 Q 83.8 336.3 132.4 296.2 L 128.8 283.0 Q 66.7 272.6 6.0 256.0 Q 66.7 239.4 128.8 229.0 L 132.4 215.8 Q 83.8 175.7 39.5 131.0 Q 100.4 147.0 159.4 169.0 L 169.0 159.4 Q 147.0 100.4 131.0 39.5 Q 175.7 83.8 215.8 132.4 L 229.0 128.8 Q 239.4 66.7 256.0 6.0 Q 272.6 66.7 283.0 128.8 L 296.2 132.4 Q 336.3 83.8 381.0 39.5 Q 365.0 100.4 343.0 159.4 L 352.6 169.0 Q 411.6 147.0 472.5 131.0 Q 428.2 175.7 379.6 215.8 Z" fill="#ff9800" stroke="#ff9800" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="256" cy="256" r="125" fill="url(#sun-grad)" />
+  </g>
+</svg>

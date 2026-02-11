@@ -1,64 +1,75 @@
 {
+  "serverMode": "static",
   "contactFormEndpoint": "./contact.php",
-  "contactMode": "client",
-  "_contactMode_note": "options: 'server' (post to endpoint), 'client' (mailto), 'demo' (mock success)",
   "adminEmail": "[EMAIL_ADDRESS]",
-  "newsMode": "client",
-  "aqiWorkerUrl": "https://nepal-aqi.aksharlabs2-4c9.workers.dev",
-	"_note": "if newsMode is 'server', then newsApiEndpoints will be used",
-  "newsApiEndpoints": [
-    "./news_api.php?category="
-  ],
-  "corsProxies": [],
-  "clientProxies": [
-    "https://surya-news-proxy.aksharlabs2-4c9.workers.dev/?url=",
-    "https://api.allorigins.win/get?url="
-  ],
-  "serverProxies": [
-    "./proxy.php?url="
-  ],
-  "apiUrls": {
-    "fuelPrices": { "url": "https://noc.org.np/retailprice", "type": "html" },
-    "vegetablePrices": { "url": "https://kalimatimarket.gov.np/price", "type": "html" },
-    "goldPrices": { "url": "./gold_api.php", "type": "json" },
-    "forexRates": { "url": "https://www.nrb.org.np/api/forex/v1/rates", "type": "json" }
+  "newsApiEndpoints": ["./news_api.php?category="],
+  "apiKeys": ["test_key_123", "test_key_456"],
+  "modes": {
+    "static": {
+      "aqiWorkerUrl": "https://nepal-aqi.aksharlabs2-4c9.workers.dev",
+      "proxies": [
+        "https://surya-news-proxy.aksharlabs2-4c9.workers.dev/?url=",
+        "https://api.allorigins.win/get?url=",
+        "https://api.codetabs.com/v1/proxy?quest=",
+        "https://corsproxy.io/?"
+      ],
+      "apiUrls": {
+        "fuelPrices": { "url": "https://noc.org.np/retailprice", "type": "html" },
+        "vegetablePrices": { "url": "https://kalimatimarket.gov.np/price", "type": "html" },
+        "goldPrices": { "url": "https://arthasarokar.com/gold-price/", "type": "html" },
+        "forexRates": { "url": "https://www.nrb.org.np/api/forex/v1/rates", "type": "json" }
+      }
+    },
+    "php": {
+      "baseUrl": "http://localhost:8000",
+      "aqiWorkerUrl": "./aqi_api.php",
+      "proxies": [
+        "./proxy.php?url="
+      ],
+      "apiUrls": {
+        "fuelPrices": { "url": "./fuel_api.php", "type": "json" },
+        "vegetablePrices": { "url": "./vege_api.php", "type": "json" },
+        "goldPrices": { "url": "./gold_api.php", "type": "json" },
+        "forexRates": { "url": "./forex_api.php", "type": "json" }
+      }
+    }
   },
   "newsFeeds": {
   "fresh": [
-    { "url": "https://kalopati.com/kp_api/app/v1/posts", "type": "json", "sourceName": "कालोपाटी" },
-    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=97", "type": "json", "sourceName": "अर्थ सरोकार" },
-    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=3", "type": "json", "sourceName": "अर्थ खबर" },
-    { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=4", "type": "json", "sourceName": "बैंकिङ संसार" }
+    { "url": "https://kalopati.com/kp_api/app/v1/posts?_embed", "type": "json", "sourceName": "कालोपाटी" },
+    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=97&_embed", "type": "json", "sourceName": "अर्थ सरोकार" },
+    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=3&_embed", "type": "json", "sourceName": "अर्थ खबर" },
+    { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=4&_embed", "type": "json", "sourceName": "बैंकिङ संसार" }
   ],
   "rajniti": [
-    { "url": "https://kalopati.com/kp_api/app/v1/get-category/1/10", "type": "json", "sourceName": "कालोपाटी" },
-    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=205", "type": "json", "sourceName": "अर्थ सरोकार" },
-    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=6", "type": "json", "sourceName": "अर्थ खबर" }
+    { "url": "https://kalopati.com/kp_api/app/v1/get-category/1/10?_embed", "type": "json", "sourceName": "कालोपाटी" },
+    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=205&_embed", "type": "json", "sourceName": "अर्थ सरोकार" },
+    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=6&_embed", "type": "json", "sourceName": "अर्थ खबर" }
   ],
   "artha": [
-    { "url": "https://kalopati.com/kp_api/app/v1/get-category/10/10", "type": "json", "sourceName": "कालोपाटी" },
-    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=149", "type": "json", "sourceName": "अर्थ सरोकार" },
-    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=93", "type": "json", "sourceName": "अर्थ सरोकार" },
-    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=102", "type": "json", "sourceName": "अर्थ सरोकार" },
-    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=36", "type": "json", "sourceName": "अर्थ खबर" },
-    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=28", "type": "json", "sourceName": "अर्थ खबर" },
-    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=45", "type": "json", "sourceName": "अर्थ खबर" },
-    { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=25", "type": "json", "sourceName": "बैंकिङ संसार" },
-    { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=26", "type": "json", "sourceName": "बैंकिङ संसार" },
-    { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=17", "type": "json", "sourceName": "बैंकिङ संसार" }
+    { "url": "https://kalopati.com/kp_api/app/v1/get-category/10/10?_embed", "type": "json", "sourceName": "कालोपाटी" },
+    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=149&_embed", "type": "json", "sourceName": "अर्थ सरोकार" },
+    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=93&_embed", "type": "json", "sourceName": "अर्थ सरोकार" },
+    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=102&_embed", "type": "json", "sourceName": "अर्थ सरोकार" },
+    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=36&_embed", "type": "json", "sourceName": "अर्थ खबर" },
+    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=28&_embed", "type": "json", "sourceName": "अर्थ खबर" },
+    { "url": "https://arthakhabar.com/ak_api/wp/v2/posts?categories=45&_embed", "type": "json", "sourceName": "अर्थ खबर" },
+    { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=25&_embed", "type": "json", "sourceName": "बैंकिङ संसार" },
+    { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=26&_embed", "type": "json", "sourceName": "बैंकिङ संसार" },
+    { "url": "https://bankingsansar.com/bs_api/wp/v2/posts?categories=17&_embed", "type": "json", "sourceName": "बैंकिङ संसार" }
   ],
   "sports": [
-    { "url": "https://kalopati.com/kp_api/app/v1/get-category/666/10", "type": "json", "sourceName": "कालोपाटी खेलकुद" }
+    { "url": "https://kalopati.com/kp_api/app/v1/get-category/666/10?_embed", "type": "json", "sourceName": "कालोपाटी खेलकुद" }
   ],
   "tech": [
-    { "url": "https://kalopati.com/kp_api/app/v1/get-category/703/10", "type": "json", "sourceName": "कालोपाटी प्रविधि" }
+    { "url": "https://kalopati.com/kp_api/app/v1/get-category/667/10?_embed", "type": "json", "sourceName": "कालोपाटी प्रविधि" }
   ],
   "entertainment": [
-    { "url": "https://kalopati.com/kp_api/app/v1/get-category/703/10", "type": "json", "sourceName": "कालोपाटी मनोरञ्जन" }
+    { "url": "https://kalopati.com/kp_api/app/v1/get-category/703/10?_embed", "type": "json", "sourceName": "कालोपाटी मनोरञ्जन" }
   ],
   "english": [
-    { "url": "https://english.kalopati.com/kp_api/wp/v2/posts", "type": "json", "sourceName": "कालोपाटी अंग्रेजी" },
-    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=590", "type": "json", "sourceName": "अर्थ सरोकार अंग्रेजी" }
+    { "url": "https://english.kalopati.com/kp_api/wp/v2/posts?_embed", "type": "json", "sourceName": "कालोपाटी अंग्रेजी" },
+    { "url": "https://arthasarokar.com/wp-json/wp/v2/posts?categories=590&_embed", "type": "json", "sourceName": "अर्थ सरोकार अंग्रेजी" }
   ]
 },
 
