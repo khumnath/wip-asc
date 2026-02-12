@@ -1,32 +1,1040 @@
 [
   {
     "id": 1,
-    "dream": "सर्प देख्नु (Seeing a Snake)",
-    "meaning": "धन प्राप्ति हुने वा शत्रु परास्त हुने संकेत। (Sign identifying wealth gain or defeating enemies.)",
+    "dream": "मोटो गोरु देख्नु (Seeing a fat ox)",
+    "meaning": "अन्न सस्तो हुन सक्छ। (Grains may become cheaper.)",
     "type": "good"
   },
   {
     "id": 2,
-    "dream": "आगो लाग्नु (Fire)",
-    "meaning": "चिन्ता र तनाव बढ्ने छ। (Increase in anxiety and stress.)",
-    "type": "bad"
+    "dream": "चामल देख्नु (Seeing rice)",
+    "meaning": "शत्रुता समाप्त हुनेछ। (Enmity will end.)",
+    "type": "good"
   },
   {
     "id": 3,
-    "dream": "उडेको देख्नु (Flying)",
-    "meaning": "सफलता र उन्नति हुनेछ। (Success and progress/promotion.)",
+    "dream": "पूजा-पाठ गरेको देख्नु (Seeing worship/prayer)",
+    "meaning": "समस्याको अन्त्य हुनेछ। (End of problems.)",
     "type": "good"
   },
   {
     "id": 4,
-    "dream": "दाँत झर्नु (Falling Teeth)",
-    "meaning": "कोही नजिकको व्यक्तिको स्वास्थ्यमा समस्या आउन सक्छ। (Health issues for a close one.)",
-    "type": "bad"
+    "dream": "शिशु (बच्चा) चलेको देख्नु (Seeing a baby crawling)",
+    "meaning": "रोकेको धन प्राप्त हुन सक्ने। (Blocked money may be recovered.)",
+    "type": "good"
   },
   {
     "id": 5,
-    "dream": "पानी पर्नु (Raining)",
-    "meaning": "शान्ति र समृद्धि प्राप्त हुनेछ। (Peace and prosperity.)",
+    "dream": "कुनै फलको गुडी देख्नु (Seeing fruit kernel/seed)",
+    "meaning": "शीघ्र धन लाभ हुनेछ। (Quick financial gain.)",
     "type": "good"
+  },
+  {
+    "id": 6,
+    "dream": "पलङमा सुतेको देख्नु (Sleeping on a bed)",
+    "meaning": "गौरव प्राप्ति हुनेछ। (Attainment of honor/pride.)",
+    "type": "good"
+  },
+  {
+    "id": 7,
+    "dream": "हराभरा जंगल देख्नु (Seeing a lush green forest)",
+    "meaning": "प्रसन्नता मिल्नेछ। (Happiness will be obtained.)",
+    "type": "good"
+  },
+  {
+    "id": 8,
+    "dream": "खुला दरवार देख्नु (Seeing an open palace gate)",
+    "meaning": "नयाँ व्यक्तिसँग मित्रता बन्न सक्ने। (Friendship with new people.)",
+    "type": "good"
+  },
+  {
+    "id": 9,
+    "dream": "बन्द दरवार देख्नु (Seeing a closed palace gate)",
+    "meaning": "धनको नोक्सान हुनेछ। (Loss of wealth.)",
+    "type": "bad"
+  },
+  {
+    "id": 10,
+    "dream": "भात खाएको देख्नु (Eating cooked rice)",
+    "meaning": "धन र प्रसिद्धि प्राप्ति हुनेछ। (Attainment of wealth and fame.)",
+    "type": "good"
+  },
+  {
+    "id": 11,
+    "dream": "चश्मा लगाएको देख्नु (Wearing glasses)",
+    "meaning": "ज्ञान बढ्नेछ। (Increase in knowledge.)",
+    "type": "good"
+  },
+  {
+    "id": 12,
+    "dream": "महिलाले हस्तमैथुन गरेको देख्नु (Seeing a woman masturbating)",
+    "meaning": "धन प्राप्ति हुनेछ। (Acquisition of wealth.)",
+    "type": "good"
+  },
+  {
+    "id": 13,
+    "dream": "पुरी खाएको देख्नु (Eating Puri)",
+    "meaning": "प्रसन्नताको समाचार मिल्नेछ। (Will receive happy news.)",
+    "type": "good"
+  },
+  {
+    "id": 14,
+    "dream": "बत्ति बालेको देख्नु (Lighting a lamp)",
+    "meaning": "नयाँ अवसर पाइनेछ। (Will get new opportunities.)",
+    "type": "good"
+  },
+  {
+    "id": 15,
+    "dream": "आकाशमा बिजुली चम्केको देख्नु (Lightning in the sky)",
+    "meaning": "कार्य व्यवसायमा स्थिरता आउनेछ। (Stability in business/work.)",
+    "type": "good"
+  },
+  {
+    "id": 16,
+    "dream": "मासु देख्नु (Seeing meat)",
+    "meaning": "आकस्मिक धन लाभ हुनेछ। (Sudden financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 17,
+    "dream": "विदाई समारोह देख्नु (Seeing a farewell ceremony)",
+    "meaning": "धन-सम्पतीमा वृद्धि हुनेछ। (Increase in wealth and property.)",
+    "type": "good"
+  },
+  {
+    "id": 18,
+    "dream": "भाँचिएको छत देख्नु (Seeing a broken roof)",
+    "meaning": "हराएको धन प्राप्ति हुनेछ। (Recovery of lost money.)",
+    "type": "good"
+  },
+  {
+    "id": 19,
+    "dream": "सेतो परेवा देख्नु (Seeing a white pigeon)",
+    "meaning": "शत्रु मित्र बन्न सक्ने। (Enemies may become friends.)",
+    "type": "good"
+  },
+  {
+    "id": 20,
+    "dream": "मौरी देख्नु (Seeing bees)",
+    "meaning": "मित्रतामा प्रेम बढ्न सक्ने। (Love may increase in friendship.)",
+    "type": "good"
+  },
+  {
+    "id": 21,
+    "dream": "पन्जा देख्नु (Seeing a claw/paw)",
+    "meaning": "अचानक धन लाभ हुनेछ। (Sudden financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 22,
+    "dream": "सिंह जोडी देख्नु (Seeing a pair of lions)",
+    "meaning": "दाम्पत्य जीवन सफलता उन्मुख हुनेछ। (Marital life heading towards success.)",
+    "type": "good"
+  },
+  {
+    "id": 23,
+    "dream": "मैना देख्नु (Seeing a Myna bird)",
+    "meaning": "उत्तम स्वास्थ्य हुनेछ। (Excellent health.)",
+    "type": "good"
+  },
+  {
+    "id": 24,
+    "dream": "आभूषण देख्नु (Seeing jewelry)",
+    "meaning": "कुनै काम पूरा हुनेछ। (Completion of a task.)",
+    "type": "good"
+  },
+  {
+    "id": 25,
+    "dream": "जामुन खाना (Eating Jamun/Java Plum)",
+    "meaning": "समस्या टाढा हुनेछ। (Problems will go away.)",
+    "type": "good"
+  },
+  {
+    "id": 26,
+    "dream": "जुवा खेलेको देख्नु (Gambling)",
+    "meaning": "व्यापारमा लाभ हुनेछ। (Profit in business.)",
+    "type": "good"
+  },
+  {
+    "id": 27,
+    "dream": "खच्चर देख्नु (Seeing a mule)",
+    "meaning": "धन सम्बन्धि समस्या। (Wealth related problems.)",
+    "type": "good"
+  },
+  {
+    "id": 28,
+    "dream": "समाधि गरेको देख्नु (Seeing deep meditation/Samadhi)",
+    "meaning": "सौभाग्य प्राप्ति हुनेछ। (Attainment of good fortune.)",
+    "type": "good"
+  },
+  {
+    "id": 29,
+    "dream": "आफै उडेको देख्नु (Seeing oneself flying)",
+    "meaning": "कुनै पनि समस्या हट्नेछ। (Removal of any problem.)",
+    "type": "good"
+  },
+  {
+    "id": 30,
+    "dream": "लडाई देख्नु (Seeing a fight/war)",
+    "meaning": "प्रसन्नता प्राप्त हुनेछ। (Happiness will be obtained.)",
+    "type": "good"
+  },
+  {
+    "id": 31,
+    "dream": "लडाईमा मरेको देख्नु (Dying in a battle)",
+    "meaning": "राज प्राप्तिको योग। (Chance of obtaining royal status/power.)",
+    "type": "good"
+  },
+  {
+    "id": 32,
+    "dream": "गोबर देख्नु (Seeing cow dung)",
+    "meaning": "पशुको व्यापारमा लाभ हुनेछ। (Profit in animal trade.)",
+    "type": "good"
+  },
+  {
+    "id": 33,
+    "dream": "सुपारी देख्नु (Seeing betel nut)",
+    "meaning": "रोगबाट मुक्ति मिल्नेछ। (Freedom from disease.)",
+    "type": "good"
+  },
+  {
+    "id": 34,
+    "dream": "लठ्ठी देख्नु (Seeing a stick)",
+    "meaning": "आराम प्राप्ति हुनेछ। (Attainment of comfort.)",
+    "type": "good"
+  },
+  {
+    "id": 35,
+    "dream": "खाली बैलगाडा देख्नु (Seeing an empty bullock cart)",
+    "meaning": "नोक्सानी हुने सम्भावना। (Possibility of loss.)",
+    "type": "bad"
+  },
+  {
+    "id": 36,
+    "dream": "सलाई कोर्नु (Striking a match)",
+    "meaning": "धनको प्राप्ति हुनेछ। (Acquisition of wealth.)",
+    "type": "good"
+  },
+  {
+    "id": 37,
+    "dream": "आँखा जुधाएको देख्नु (Making eye contact)",
+    "meaning": "धन लाभ हुनेछ। (Financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 38,
+    "dream": "लाश देख्नु (Seeing a corpse)",
+    "meaning": "बिमारी टाढा हुनेछ। (Illness will go away.)",
+    "type": "good"
+  },
+  {
+    "id": 39,
+    "dream": "चुरा देख्नु (Seeing bangles)",
+    "meaning": "सौभाग्य वृद्धि हुनेछ। (Increase in good fortune.)",
+    "type": "good"
+  },
+  {
+    "id": 40,
+    "dream": "धन उधारो देख्नु (Lending money)",
+    "meaning": "अत्याधिक धन प्राप्ति हुनेछ। (Excessive wealth acquisition.)",
+    "type": "good"
+  },
+  {
+    "id": 41,
+    "dream": "चन्द्रमा देख्नु (Seeing the moon)",
+    "meaning": "सम्मान मिल्नेछ। (Gaining respect.)",
+    "type": "good"
+  },
+  {
+    "id": 42,
+    "dream": "चाँदी देख्नु (Seeing silver)",
+    "meaning": "धन लाभ हुनेछ। (Financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 43,
+    "dream": "खेतमा पाकेको गहुँ देख्नु (Seeing ripe wheat in field)",
+    "meaning": "धन लाभ हुनेछ। (Financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 44,
+    "dream": "फलफूल खाएको देख्नु (Eating fruits)",
+    "meaning": "धन लाभ हुनेछ। (Financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 45,
+    "dream": "रातो फूल देख्नु (Seeing a red flower)",
+    "meaning": "भाग्य चम्कन सक्ने। (Luck may shine.)",
+    "type": "good"
+  },
+  {
+    "id": 46,
+    "dream": "सेतो फूल देख्नु (Seeing a white flower)",
+    "meaning": "कुनै समस्याबाट छुटकारा। (Relief from a problem.)",
+    "type": "good"
+  },
+  {
+    "id": 47,
+    "dream": "सेतो सर्पले टोकेको देख्नु (Bitten by a white snake)",
+    "meaning": "धन प्राप्ति हुनेछ। (Acquisition of wealth.)",
+    "type": "good"
+  },
+  {
+    "id": 48,
+    "dream": "नदीको पानी पिएको देख्नु (Drinking river water)",
+    "meaning": "सरकारको लाभ मिल्नेछ। (Benefit from the government.)",
+    "type": "good"
+  },
+  {
+    "id": 49,
+    "dream": "रोटी खाएको देख्नु (Eating Roti/Bread)",
+    "meaning": "धन लाभ वा राजयोग। (Financial gain or royal status.)",
+    "type": "good"
+  },
+  {
+    "id": 50,
+    "dream": "कपास देख्नु (Seeing cotton)",
+    "meaning": "निरोगी हुने। (Being healthy.)",
+    "type": "good"
+  },
+  {
+    "id": 51,
+    "dream": "कुकुर देख्नु (Seeing a dog)",
+    "meaning": "पुरानो मित्रसंग मिलन। (Reunion with an old friend.)",
+    "type": "good"
+  },
+  {
+    "id": 52,
+    "dream": "धनुष चढेको देख्नु (Climbing/Holding a bow)",
+    "meaning": "सुख सयल वृद्धि व पदोन्नति। (Increase in luxury and promotion.)",
+    "type": "good"
+  },
+  {
+    "id": 53,
+    "dream": "जमिनमा ओछ्यान लगाएको देख्नु (Making a bed on the ground)",
+    "meaning": "दीर्घायु वा सुखमा वृद्धि। (Longevity or increase in happiness.)",
+    "type": "good"
+  },
+  {
+    "id": 54,
+    "dream": "घर बनाएको देख्नु (Building a house)",
+    "meaning": "प्रसिद्धि मिल्न सक्ने। (Possible fame.)",
+    "type": "good"
+  },
+  {
+    "id": 55,
+    "dream": "घोडा देख्नु (Seeing a horse)",
+    "meaning": "संकट टाढा हुने। (Crisis will go away.)",
+    "type": "good"
+  },
+  {
+    "id": 56,
+    "dream": "मोती देख्नु (Seeing a pearl)",
+    "meaning": "पुत्री प्राप्ति हुनेछ। (Birth of a daughter.)",
+    "type": "good"
+  },
+  {
+    "id": 57,
+    "dream": "अनार देख्नु (Seeing a pomegranate)",
+    "meaning": "धन प्राप्ति योग। (Chance of wealth acquisition.)",
+    "type": "good"
+  },
+  {
+    "id": 58,
+    "dream": "गाडेको धन देख्नु (Seeing buried treasure)",
+    "meaning": "अचानक धन लाभ हुनेछ। (Sudden financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 59,
+    "dream": "बजार देख्नु (Seeing a market)",
+    "meaning": "दरिद्रता टाढा हुने। (Poverty will go away.)",
+    "type": "good"
+  },
+  {
+    "id": 60,
+    "dream": "मृत व्यक्तिसंग गफ गरेको देख्नु (Talking to a dead person)",
+    "meaning": "मनले चाहेको इच्छा पूरा हुने। (Heart's desire will be fulfilled.)",
+    "type": "good"
+  },
+  {
+    "id": 61,
+    "dream": "लाश लगेको देख्नु (Carrying a corpse)",
+    "meaning": "बीमारीबाट छुटकारा। (Freedom from illness.)",
+    "type": "good"
+  },
+  {
+    "id": 62,
+    "dream": "घाँसको मैदान देख्नु (Seeing a grassy field)",
+    "meaning": "धन लाभको योग। (Chance of financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 63,
+    "dream": "पर्खालमा किला ठोकेको देख्नु (Nailing a wall)",
+    "meaning": "ठूलो व्यक्तिद्वारा धनलाभ। (Financial gain from a prominent person.)",
+    "type": "good"
+  },
+  {
+    "id": 64,
+    "dream": "पर्खाल देख्नु (Seeing a wall)",
+    "meaning": "सम्मान बढ्ने। (Respect will increase.)",
+    "type": "good"
+  },
+  {
+    "id": 65,
+    "dream": "झरना देख्नु (Seeing a waterfall)",
+    "meaning": "दु:खको अन्त्य। (End of sorrow.)",
+    "type": "good"
+  },
+  {
+    "id": 66,
+    "dream": "बलेको दियो देख्नु (Seeing a lit lamp)",
+    "meaning": "आयुमा वृद्धि। (Increase in lifespan.)",
+    "type": "good"
+  },
+  {
+    "id": 67,
+    "dream": "सूर्य देख्नु (Seeing the sun)",
+    "meaning": "पदोन्नति वा धनलाभ। (Promotion or financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 68,
+    "dream": "चेक लेखेर दिएको देख्नु (Writing a check)",
+    "meaning": "धन मिल्ने। (Will receive money.)",
+    "type": "good"
+  },
+  {
+    "id": 69,
+    "dream": "कुवामा पानी देख्नु (Water in a well)",
+    "meaning": "धन लाभ। (Financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 70,
+    "dream": "आकाश देख्नु (Seeing the sky)",
+    "meaning": "पुत्र प्राप्ति। (Birth of a son.)",
+    "type": "good"
+  },
+  {
+    "id": 71,
+    "dream": "गोबर देख्नु (Seeing cow dung)",
+    "meaning": "पशुको व्यापारमा लाभ। (Profit in animal trade.)",
+    "type": "good"
+  },
+  {
+    "id": 72,
+    "dream": "सुन्दरी स्त्री देख्नु (Seeing a beautiful woman)",
+    "meaning": "प्रेममा सफलता। (Success in love.)",
+    "type": "good"
+  },
+  {
+    "id": 73,
+    "dream": "छुरा देख्नु (Seeing a razor/knife)",
+    "meaning": "सौभाग्य वृद्धि। (Increase in fortune.)",
+    "type": "good"
+  },
+  {
+    "id": 74,
+    "dream": "गुरु देख्नु (Seeing a teacher/Guru)",
+    "meaning": "सफलता मिल्ने। (Success will be obtained.)",
+    "type": "good"
+  },
+  {
+    "id": 75,
+    "dream": "इन्द्रधनुष देख्नु (Seeing a rainbow)",
+    "meaning": "उत्तम स्वास्थ्य। (Excellent health.)",
+    "type": "good"
+  },
+  {
+    "id": 76,
+    "dream": "मरेको मान्छे गाड्ने ठाउ देख्नु (Seeing a burial ground)",
+    "meaning": "समाजमा प्रतिष्ठा। (Reputation in society.)",
+    "type": "good"
+  },
+  {
+    "id": 77,
+    "dream": "कमलको फूल देख्नु (Seeing a lotus flower)",
+    "meaning": "रोगबाट छुटकारा। (Relief from disease.)",
+    "type": "good"
+  },
+  {
+    "id": 78,
+    "dream": "देवीको दर्शन गरेको देख्नु (Seeing a Goddess)",
+    "meaning": "रोगबाट मुक्ति। (Freedom from disease.)",
+    "type": "good"
+  },
+  {
+    "id": 79,
+    "dream": "घुम्ती लगाएको देख्नु (Seeing someone wearing a veil)",
+    "meaning": "सौभाग्य प्राप्ति। (Attainment of good fortune.)",
+    "type": "good"
+  },
+  {
+    "id": 80,
+    "dream": "छुरी देख्नु (Seeing a knife)",
+    "meaning": "संकटबाट मुक्ति। (Freedom from crisis.)",
+    "type": "good"
+  },
+  {
+    "id": 81,
+    "dream": "बालक देख्नु (Seeing a child)",
+    "meaning": "सन्तानको वृद्धि। (Increase in offspring.)",
+    "type": "good"
+  },
+  {
+    "id": 82,
+    "dream": "चन्दन देख्नु (Seeing sandalwood)",
+    "meaning": "शुभ समाचार मिल्ने। (Will receive good news.)",
+    "type": "good"
+  },
+  {
+    "id": 83,
+    "dream": "जटाधारी साधु देख्नु (Seeing a long-haired ascetic)",
+    "meaning": "राम्रो समयको शुरुआत। (Beginning of good times.)",
+    "type": "good"
+  },
+  {
+    "id": 84,
+    "dream": "त्रिशूल देख्नु (Seeing a trident)",
+    "meaning": "शत्रुबाट मुक्ति। (Freedom from enemies.)",
+    "type": "good"
+  },
+  {
+    "id": 85,
+    "dream": "तारामण्डल देख्नु (Seeing a constellation)",
+    "meaning": "सौभाग्यको वृद्धि। (Increase in fortune.)",
+    "type": "good"
+  },
+  {
+    "id": 86,
+    "dream": "सर्प देख्नु (Seeing a snake)",
+    "meaning": "धन लाभ। (Financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 87,
+    "dream": "तपस्वी देख्नु (Seeing an ascetic)",
+    "meaning": "दान गर्ने अवसर। (Opportunity for charity.)",
+    "type": "good"
+  },
+  {
+    "id": 88,
+    "dream": "हुलाकी देख्नु (Seeing a postman)",
+    "meaning": "टाढाको आफन्त भेट। (Meeting distant relatives.)",
+    "type": "good"
+  },
+  {
+    "id": 89,
+    "dream": "थप्पड मारेको देख्नु (Slapping someone)",
+    "meaning": "शत्रुसामु विजय। (Victory over enemies.)",
+    "type": "good"
+  },
+  {
+    "id": 90,
+    "dream": "मसीको भाँडो देख्नु (Seeing an ink pot)",
+    "meaning": "धन आगमन। (Arrival of wealth.)",
+    "type": "good"
+  },
+  {
+    "id": 91,
+    "dream": "आफ्नै आमा देख्नु (Seeing one's own mother)",
+    "meaning": "सम्मान प्राप्ति। (Receiving respect.)",
+    "type": "good"
+  },
+  {
+    "id": 92,
+    "dream": "हुलाक घर देख्नु (Seeing a post office)",
+    "meaning": "व्यापारमा उन्नति। (Progress in business.)",
+    "type": "good"
+  },
+  {
+    "id": 93,
+    "dream": "नक्शा देख्नु (Seeing a map)",
+    "meaning": "कुनै योजनामा सफलता। (Success in a plan.)",
+    "type": "good"
+  },
+  {
+    "id": 94,
+    "dream": "नुन देख्नु (Seeing salt)",
+    "meaning": "स्वास्थ्यमा लाभ। (Health benefits.)",
+    "type": "good"
+  },
+  {
+    "id": 95,
+    "dream": "बाटो देख्नु (Seeing a road)",
+    "meaning": "समस्याका निराकरण। (Solution to problems.)",
+    "type": "good"
+  },
+  {
+    "id": 96,
+    "dream": "आफन्त देख्नु (Seeing relatives)",
+    "meaning": "उत्तम समयको शुरुवात। (Beginning of best times.)",
+    "type": "good"
+  },
+  {
+    "id": 97,
+    "dream": "दम्पति देख्नु (Seeing a couple)",
+    "meaning": "दाम्पत्य जीवन अनुकूलता। (Harmony in marital life.)",
+    "type": "good"
+  },
+  {
+    "id": 98,
+    "dream": "शत्रु देख्नु (Seeing an enemy)",
+    "meaning": "उत्तम धनलाभ। (Excellent financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 99,
+    "dream": "तास देख्नु (Seeing playing cards)",
+    "meaning": "समस्यामा वृद्धि। (Increase in problems.)",
+    "type": "good"
+  },
+  {
+    "id": 100,
+    "dream": "तीर देख्नु (Seeing an arrow)",
+    "meaning": "लक्ष्यको वृद्धि। (Growth of goals.)",
+    "type": "good"
+  },
+  {
+    "id": 101,
+    "dream": "सुकेको घाँस देख्नु (Seeing dry grass)",
+    "meaning": "जीवनमा समस्या। (Problems in life.)",
+    "type": "bad"
+  },
+  {
+    "id": 102,
+    "dream": "भगवान शिव देख्नु (Seeing Lord Shiva)",
+    "meaning": "विपत्तिको नाश। (Destruction of disaster.)",
+    "type": "good"
+  },
+  {
+    "id": 103,
+    "dream": "न्याउरी मुसा देख्नु (Seeing a mongoose)",
+    "meaning": "शत्रुभयबाट मुक्ति। (Freedom from fear of enemies.)",
+    "type": "good"
+  },
+  {
+    "id": 104,
+    "dream": "टोपी जस्तो देख्नु (Seeing a cap/hat)",
+    "meaning": "मान-सम्मान वृद्धि। (Increase in honor.)",
+    "type": "good"
+  },
+  {
+    "id": 105,
+    "dream": "दूध देख्नु (Seeing milk)",
+    "meaning": "आर्थिक उन्नति। (Economic progress.)",
+    "type": "good"
+  },
+  {
+    "id": 106,
+    "dream": "मन्दिर देख्नु (Seeing a temple)",
+    "meaning": "धार्मिक कार्यमा सहयोग। (Cooperation in religious work.)",
+    "type": "good"
+  },
+  {
+    "id": 107,
+    "dream": "नदी देख्नु (Seeing a river)",
+    "meaning": "सौभाग्य वृद्धि। (Increase in fortune.)",
+    "type": "good"
+  },
+  {
+    "id": 108,
+    "dream": "निलगाई देख्नु (Seeing a blue bull/Nilgai)",
+    "meaning": "भौतिक सुखको प्राप्ति। (Attainment of material comforts.)",
+    "type": "good"
+  },
+  {
+    "id": 109,
+    "dream": "बेलपत्र देख्नु (Seeing Belpatra leaf)",
+    "meaning": "धन-धान्य वृद्धि। (Increase in wealth and grains.)",
+    "type": "good"
+  },
+  {
+    "id": 110,
+    "dream": "आफ्नै दिदीबहिनी देख्नु (Seeing own sisters)",
+    "meaning": "परिवारमा माया प्रेम र सम्बन्ध मजबुत हुने। (Love and relationships in family will strengthen.)",
+    "type": "good"
+  },
+  {
+    "id": 111,
+    "dream": "पुजा गरेको देख्नु (Performing worship)",
+    "meaning": "कुनै योजनामा लाभ। (Profit in a plan.)",
+    "type": "good"
+  },
+  {
+    "id": 112,
+    "dream": "पिर गरेको देख्नु (Worrying/Grieving)",
+    "meaning": "अत्यधिक शुभ फल। (Extremely good result.)",
+    "type": "good"
+  },
+  {
+    "id": 113,
+    "dream": "गाइको बाछा देख्नु (Seeing a calf)",
+    "meaning": "कुनै अनौठो घटना हुनु। (A strange event will happen.)",
+    "type": "good"
+  },
+  {
+    "id": 114,
+    "dream": "स्वस्तिक देख्नु (Seeing a Swastika)",
+    "meaning": "धन लाभ। (Financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 115,
+    "dream": "भाई देख्नु (Seeing brother)",
+    "meaning": "नयाँ मित्र बन्न सक्ने। (Can make a new friend.)",
+    "type": "good"
+  },
+  {
+    "id": 116,
+    "dream": "मह देख्नु (Seeing honey)",
+    "meaning": "जीवनमा अनुकूलता। (Favorable conditions in life.)",
+    "type": "good"
+  },
+  {
+    "id": 117,
+    "dream": "स्वयंको मृत्यु देख्नु (Seeing own death)",
+    "meaning": "भयंकर रोगबाट मुक्ति। (Freedom from terrible disease.)",
+    "type": "good"
+  },
+  {
+    "id": 118,
+    "dream": "रुद्राक्ष देख्नु (Seeing Rudraksha)",
+    "meaning": "शुभ समाचार मिल्ने। (Will receive good news.)",
+    "type": "good"
+  },
+  {
+    "id": 119,
+    "dream": "पैसा देख्नु (Seeing money)",
+    "meaning": "धन लाभ। (Financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 120,
+    "dream": "सुगा देख्नु (Seeing a parrot)",
+    "meaning": "सौभाग्य वृद्धि। (Increase in fortune.)",
+    "type": "good"
+  },
+  {
+    "id": 121,
+    "dream": "अलैंची देख्नु (Seeing cardamom)",
+    "meaning": "मान-सम्मान प्राप्ति। (Attainment of honor.)",
+    "type": "good"
+  },
+  {
+    "id": 122,
+    "dream": "सरस्वतीको दर्शन (Seeing Goddess Saraswati)",
+    "meaning": "बुद्धि बिबेक वृद्धि। (Increase in wisdom and discretion.)",
+    "type": "good"
+  },
+  {
+    "id": 123,
+    "dream": "छेपारो देख्नु (Seeing a lizard)",
+    "meaning": "घरमा चोरी हुन् सक्ने। (Theft may occur at home.)",
+    "type": "bad"
+  },
+  {
+    "id": 124,
+    "dream": "चरा देख्नु (Seeing a bird)",
+    "meaning": "नोकरीमा पदोन्नति। (Promotion in job.)",
+    "type": "good"
+  },
+  {
+    "id": 125,
+    "dream": "कन्या केटी घरमा आएको देख्नु (Girl coming home)",
+    "meaning": "लक्ष्मीको आशिर्वाद। (Blessing of Goddess Lakshmi.)",
+    "type": "good"
+  },
+  {
+    "id": 126,
+    "dream": "दूध दिने भैंसी देख्नु (Seeing a milking buffalo)",
+    "meaning": "उत्तम अन्न लाभ। (Excellent grain benefit.)",
+    "type": "good"
+  },
+  {
+    "id": 127,
+    "dream": "खाली थाल देख्नु (Seeing an empty plate)",
+    "meaning": "धन प्राप्ति योग। (Chance of wealth acquisition.)",
+    "type": "good"
+  },
+  {
+    "id": 128,
+    "dream": "गुड खाएको देख्नु (Eating Jaggery)",
+    "meaning": "राम्रो समय आउने संकेत। (Sign of good times coming.)",
+    "type": "good"
+  },
+  {
+    "id": 129,
+    "dream": "शिंह देख्नु (Seeing a lion)",
+    "meaning": "शत्रुमाथि विजय। (Victory over enemies.)",
+    "type": "good"
+  },
+  {
+    "id": 130,
+    "dream": "हात्ती दखे (Seeing an elephant)",
+    "meaning": "ऐेश्वर्य प्राप्ति। (Attainment of opulence.)",
+    "type": "good"
+  },
+  {
+    "id": 131,
+    "dream": "ऊँट देख्नु (Seeing a camel)",
+    "meaning": "धन लाभ। (Financial gain.)",
+    "type": "good"
+  },
+  {
+    "id": 132,
+    "dream": "सूर्य देख्नु (Seeing the sun)",
+    "meaning": "खास व्यक्तिसँग भेट। (Meeting with a special person.)",
+    "type": "good"
+  },
+  {
+    "id": 133,
+    "dream": "औंठी लगाएको देख्नु (Wearing a ring)",
+    "meaning": "सुन्दरी स्त्री प्राप्त हुन् सक्ने। (May get a beautiful wife.)",
+    "type": "good"
+  },
+  {
+    "id": 134,
+    "dream": "आकाशमा उडेको देख्नु (Flying in the sky)",
+    "meaning": "लामो यात्रा हुन सक्ने। (Long journey may happen.)",
+    "type": "good"
+  },
+  {
+    "id": 135,
+    "dream": "आँप खाएको देख्नु (Eating mango)",
+    "meaning": "धन प्राप्त। (Wealth obtained.)",
+    "type": "good"
+  },
+  {
+    "id": 136,
+    "dream": "अनारको रस पिएको देख्नु (Drinking pomegranate juice)",
+    "meaning": "प्रचुर धन प्राप्त। (Abundant wealth obtained.)",
+    "type": "good"
+  },
+  {
+    "id": 137,
+    "dream": "चुचो मुख भएको चरा देख्नु (Seeing a beak-mouthed bird)",
+    "meaning": "व्यवसायमा लाभ। (Profit in business.)",
+    "type": "good"
+  },
+  {
+    "id": 138,
+    "dream": "बादल देख्नु (Seeing clouds)",
+    "meaning": "बढुवा हुन् सक्ने। (Promotion is possible.)",
+    "type": "good"
+  },
+  {
+    "id": 139,
+    "dream": "घोडा चढेको देख्नु (Riding a horse)",
+    "meaning": "व्यापारमा उन्नति। (Progress in business.)",
+    "type": "good"
+  },
+  {
+    "id": 140,
+    "dream": "ऐनामा अनुहार हेरेको देख्नु (Looking at face in mirror)",
+    "meaning": "नयाँ प्रेम सम्बन्ध हुने सम्भावना। (Possibility of new love relationship.)",
+    "type": "good"
+  },
+  {
+    "id": 141,
+    "dream": "बगैंचा देख्नु (Seeing a garden)",
+    "meaning": "खुसी मिल्ने। (Happiness will be found.)",
+    "type": "good"
+  },
+  {
+    "id": 142,
+    "dream": "कपाल काटेको देख्नु (Cutting hair)",
+    "meaning": "ऋणबाट छुटकारा। (Freedom from debt.)",
+    "type": "good"
+  },
+  {
+    "id": 143,
+    "dream": "ओच्छ्यान देख्नु (Seeing a bed)",
+    "meaning": "धनलाभ वा दीर्घायु। (Financial gain or longevity.)",
+    "type": "good"
+  },
+  {
+    "id": 144,
+    "dream": "आफै हाँसेको देख्नु (Laughing oneself)",
+    "meaning": "कसैसंग विवाद हुन् सक्ने। (Dispute with someone may occur.)",
+    "type": "good"
+  },
+  {
+    "id": 145,
+    "dream": "आफै रोएको देख्नु (Crying oneself)",
+    "meaning": "प्रसन्नता को अवसर वा समाचार प्राप्त हुने। (Will receive happy occasion or news.)",
+    "type": "good"
+  },
+  {
+    "id": 146,
+    "dream": "फूल देख्नु (Seeing a flower)",
+    "meaning": "प्रेममा मिलन। (Union in love.)",
+    "type": "good"
+  },
+  {
+    "id": 147,
+    "dream": "शरीरमा फोहोर लागेको देख्नु (Dirt on body)",
+    "meaning": "धन प्राप्ति योग। (Chance of wealth acquisition.)",
+    "type": "good"
+  },
+  {
+    "id": 148,
+    "dream": "प्यास लागेको देख्नु (Feeling thirsty)",
+    "meaning": "लोभ बढ्ने। (Greed will increase.)",
+    "type": "good"
+  },
+  {
+    "id": 149,
+    "dream": "पानीमा डुबेको देख्नु (Drowning in water)",
+    "meaning": "राम्रो कार्य हुने। (Good work will happen.)",
+    "type": "good"
+  },
+  {
+    "id": 150,
+    "dream": "धनी व्यक्ति देख्नु (Seeing a rich person)",
+    "meaning": "धन प्राप्ति योग। (Chance of wealth acquisition.)",
+    "type": "good"
+  },
+  {
+    "id": 151,
+    "dream": "बदाम खाएको देख्नु (Eating peanuts/almonds)",
+    "meaning": "धन प्राप्ति। (Wealth acquisition.)",
+    "type": "good"
+  },
+  {
+    "id": 152,
+    "dream": "अण्डा खाएको देख्नु (Eating eggs)",
+    "meaning": "पुत्र प्राप्ति। (Birth of a son.)",
+    "type": "good"
+  },
+  {
+    "id": 153,
+    "dream": "आफ्नै सेतो कपाल देख्नु (Seeing own white hair)",
+    "meaning": "आयु बढ्ने। (Age will increase.)",
+    "type": "good"
+  },
+  {
+    "id": 154,
+    "dream": "बिच्छी देख्नु (Seeing a scorpion)",
+    "meaning": "प्रतिष्ठा प्राप्त हुने। (Reputation will be gained.)",
+    "type": "good"
+  },
+  {
+    "id": 155,
+    "dream": "पहाड चढेको देख्नु (Climbing a mountain)",
+    "meaning": "उन्नति मिल्ने। (Progress will be obtained.)",
+    "type": "good"
+  },
+  {
+    "id": 156,
+    "dream": "तरवार देख्नु (Seeing a sword)",
+    "meaning": "शत्रुसँग विजय। (Victory over enemy.)",
+    "type": "good"
+  },
+  {
+    "id": 157,
+    "dream": "हरियो साग देख्नु (Seeing green leafy vegetables)",
+    "meaning": "प्रसन्न हुने। (Will be happy.)",
+    "type": "good"
+  },
+  {
+    "id": 158,
+    "dream": "तोप देख्नु (Seeing a cannon)",
+    "meaning": "शत्रु नष्ट। (Enemy destroyed.)",
+    "type": "good"
+  },
+  {
+    "id": 159,
+    "dream": "धनुष चलाएको देख्नु (Using a bow)",
+    "meaning": "इच्छा पूर्ण हुने। (Wish fulfillment.)",
+    "type": "good"
+  },
+  {
+    "id": 160,
+    "dream": "कोइली देख्नु (Seeing a cuckoo)",
+    "meaning": "सम्मान वृद्धि। (Increase in respect.)",
+    "type": "good"
+  },
+  {
+    "id": 161,
+    "dream": "तरबुजा खाएको देख्नु (Eating watermelon)",
+    "meaning": "कसैसँग दुश्मन हुन सक्ने। (May become enemies with someone.)",
+    "type": "bad"
+  },
+  {
+    "id": 162,
+    "dream": "जहाज देख्नु (Seeing a ship/plane)",
+    "meaning": "टाढाको यात्रा हुने। (Long distance travel will happen.)",
+    "type": "good"
+  },
+  {
+    "id": 163,
+    "dream": "अपरिचितसँग यौन सम्पर्क गरेको देख्नु (Sex with stranger)",
+    "meaning": "नयाँ अवसर प्राप्त हुन सक्ने। (May get new opportunity.)",
+    "type": "bad"
+  },
+  {
+    "id": 164,
+    "dream": "परिचितसँग यौन सम्पर्क गरेको देख्नु (Sex with known person)",
+    "meaning": "झगडा हुन सक्ने। (Quarrel may happen.)",
+    "type": "bad"
+  },
+  {
+    "id": 165,
+    "dream": "दाँत झरेको (Teeth falling out)",
+    "meaning": "कष्ट आईपर्ने, नजिकको व्यक्तिसँग दुःखद खबर। (Hardships, sad news from close ones.)",
+    "type": "bad"
+  },
+  {
+    "id": 166,
+    "dream": "कालो सर्पले डस्नु (Bitten by black snake)",
+    "meaning": "शत्रु, धोका वा अचानक संकटको संकेत। (Sign of enemy, betrayal or sudden crisis.)",
+    "type": "bad"
+  },
+  {
+    "id": 167,
+    "dream": "नग्न भएको देखिनु (Being naked)",
+    "meaning": "अपमान सहनुपर्ने हुनसक्ने। (May have to bear insult.)",
+    "type": "bad"
+  },
+  {
+    "id": 168,
+    "dream": "घरमा आगलागी (House on fire)",
+    "meaning": "परिवारभित्र झगडा, तनाव वा ठूलो परिवर्तन। (Family quarrel, stress or big change.)",
+    "type": "bad"
+  },
+  {
+    "id": 169,
+    "dream": "कपाल झर्नु (Hair falling)",
+    "meaning": "मान–प्रतिष्ठा घट्नु। (Decrease in honor/prestige.)",
+    "type": "bad"
+  },
+  {
+    "id": 170,
+    "dream": "मृत व्यक्तिले बोलाउनु (Dead person calling)",
+    "meaning": "कठिन समय, स्वास्थ्यमा समस्या आउनसक्ने। (Difficult time, health problems may arise.)",
+    "type": "bad"
+  },
+  {
+    "id": 171,
+    "dream": "रगत बग्नु (Bleeding)",
+    "meaning": "हानि, विवाद। (Loss, dispute.)",
+    "type": "bad"
+  },
+  {
+    "id": 172,
+    "dream": "मन्दिर/देउता ढल्नु (Temple/Idol falling)",
+    "meaning": "काममा अवरोध। (Obstacle in work.)",
+    "type": "bad"
+  },
+  {
+    "id": 173,
+    "dream": "कसैले पछ्याउनु/भागिरहनु (Being chased/Running away)",
+    "meaning": "समस्या आउनु। (Problems arising.)",
+    "type": "bad"
   }
 ]
